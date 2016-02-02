@@ -1,0 +1,41 @@
+{
+  "appetizers": [
+    {
+      "name": "Dabeli",
+      "description": "A sweet and spicy potato mixture, put on a roll topped with pomegranate seeds, chutneys. A very popular street food from Bombay.",
+      "price": "5"
+    },
+    {
+      "name": "Chicken Sixty-Five",
+      "description": "Chicken tender marinated with spices, and cooked in a yogurt sauce, with mustard seeds and curry leaves. A special from Hyderabad.",
+      "price": "9"
+    }
+  ],
+  "entrees": [
+    {
+     "name": "Hariyali Kofta",
+     "description": "Mixed vegetable croquets cooked in a sauce made from fresh spinach, onions, tomatoes, ginger and garlic.",
+     "price": "14"
+    },
+    {
+      "name": "Chicken Bihari Kabob",
+      "description": "Chicken breast cubes, marinated in yogurt and spices with a touch of sour cream.",
+      "price": "16"
+    },
+    {
+      "name": "Honey Garlic Lamb",
+      "description": "Lamb cubes cooked with garlic and honey, onions and peppers, in a mild curry sauce.",
+      "price": "19"
+    },
+    {
+      "name": "Shrimp Vindaloo",
+      "description": "Shrimps cooked in a spicy curry sauce with potatoes.",
+      "price": "19"
+    },
+    {
+      "name": "Tandoori Salmon Tikka",
+      "description": "Fresh Chilean salmon fillets lightly marinated and cooked to perfection in the tandoor oven.",
+      "price": "20"
+    }
+  ]
+}

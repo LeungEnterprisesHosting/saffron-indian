@@ -1,0 +1,416 @@
+extends /_layout
+
+block config
+  - page = "lunch"
+  - title = "Lunch Menu | Saffron Indian Kitchen"
+  - description = "Our lunch menu offers many of our classic Indian favorites. Come in between 11am and 3pm for and join us for a delicious lunch."
+
+block content
+  .jumbotron#lunch-jumbotron
+    .container
+      .col-md-11.col-md-offset-1#menu-container
+        h1 Lunch Menu (11am to 3pm)
+        //- Menu is legacy code from original HTML
+        .row.
+          <div class="col-md-6">
+            <table class="menu">
+              <thead>
+                <tr>
+                  <th colspan="2">Appetizers</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Samosa</td>
+
+                  <td>$4</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Homemade turnover stuffed with diced potatoes
+                  and peas, flavored with spices</td>
+                </tr>
+
+                <tr>
+                  <td>Chicken Kathi Roll</td>
+
+                  <td>$8</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Thin Indian home made bread wrapped around
+                  charcoal grilled Chicken Tikka with sautéed onions, tomatoes,
+                  and our own blend of spices</td>
+                </tr>
+
+                <tr>
+                  <td>Onion Bhajiya</td>
+
+                  <td>$4</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Fresh marinated vegetables deep-fried in a
+                  chickpea batter</td>
+                </tr>
+
+                <tr>
+                  <td>Papri Chaat</td>
+
+                  <td>$5</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Lentil wafers topped with chick peas,
+                  potatoes yogurt tamarind and mint Chutney and sprinkled
+                  roasted cumin.</td>
+                </tr>
+              </tbody>
+            </table><br>
+
+            <table class="menu">
+              <thead>
+                <tr>
+                  <th colspan="2">
+                    Chicken Specials
+
+                    <p class="small">served with basmati rice, salad, and
+                    accompaniment of the day</p>
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Chicken Tikka Masala</td>
+
+                  <td>$9</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Tandoori chicken tenders cooked in a
+                  delightful delicate, tangy and spicy paprika sauce</td>
+                </tr>
+
+                <tr>
+                  <td>Chicken Korma</td>
+
+                  <td>$9</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Boneless pieces of chicken cooked in a rich
+                  almond and cream sauce</td>
+                </tr>
+
+                <tr>
+                  <td>Chicken Jalferazee</td>
+
+                  <td>$9</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Boneless pieces of chicken and mixed
+                  vegetables cooked in curry sauce</td>
+                </tr>
+
+                <tr>
+                  <td>Chicken Saag</td>
+
+                  <td>$9</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Boneless pieces of chicken cooked with light
+                  spices and fresh spinach</td>
+                </tr>
+
+                <tr>
+                  <td>Chicken Kadai</td>
+
+                  <td>$9</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Boneless pieces of chicken in curry cooked
+                  with jalapeño, onions and peppers</td>
+                </tr>
+
+                <tr>
+                  <td>Chicken Madras</td>
+
+                  <td>$9</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Boneless pieces of chicken cooked with
+                  mustard seeds, curry leaves, and coconut milk</td>
+                </tr>
+              </tbody>
+            </table><br>
+
+            <table class="menu">
+              <thead>
+                <tr>
+                  <th colspan="2">
+                    Lamb Specials
+
+                    <p class="small">served with basmati rice, salad, and
+                    accompaniment of the day</p>
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Lamb Tikka Masala</td>
+
+                  <td>$11</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Lamb pieces cooked in a delightful delicate,
+                  tangy and spicy paprika sauce</td>
+                </tr>
+
+                <tr>
+                  <td>Lamb Korma</td>
+
+                  <td>$11</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Lamb pieces cooked in a rich almond and cream
+                  sauce</td>
+                </tr>
+
+                <tr>
+                  <td>Lamb Jalferazee</td>
+
+                  <td>$11</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Lamb pieces and mixed vegetables cooked in
+                  curry sauce</td>
+                </tr>
+
+                <tr>
+                  <td>Lamb Saag</td>
+
+                  <td>$11</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Lamb pieces cooked with light spices and
+                  fresh spinach</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class='col-md-6'>
+            <table class="menu">
+              <thead>
+                <tr>
+                  <th colspan="2">Lamb Specials (cont.)</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Lamb Kadai</td>
+
+                  <td>$11</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Lamb pieces in curry cooked with jalapeño,
+                  onions, and peppers</td>
+                </tr>
+
+                <tr>
+                  <td>Lamb Madras</td>
+
+                  <td>$11</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Lamb pieces cooked with mustard seeds, curry
+                  leaves, and coconut milk</td>
+                </tr>
+              </tbody>
+            </table><br>
+
+            <table class="menu">
+              <thead>
+                <tr>
+                  <th colspan="2">
+                    Vegetable Specials
+
+                    <p class="small">served with basmati rice, salad, and
+                    accompaniment of the day</p>
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Vegetable Tikka Masala</td>
+
+                  <td>$9</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Mixed vegetables cooked in a delightful
+                  delicate, tangy and spicy paprika sauce</td>
+                </tr>
+
+                <tr>
+                  <td>Vegetable Korma</td>
+
+                  <td>$9</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Mixed vegetables cooked in a rich almond and
+                  cream sauce</td>
+                </tr>
+
+                <tr>
+                  <td>Vegetable Jalferazee</td>
+
+                  <td>$8</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Mixed vegetables cooked in curry sauce</td>
+                </tr>
+
+                <tr>
+                  <td>Saag Paneer</td>
+
+                  <td>$8</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Cheese cubes cooked with light spices and
+                  fresh spinach</td>
+                </tr>
+
+                <tr>
+                  <td>Vegetable Madras</td>
+
+                  <td>$9</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Mixed vegetables cooked with mustard seeds,
+                  curry leaves, and coconut milk</td>
+                </tr>
+
+                <tr>
+                  <td>Chana Punjabi</td>
+
+                  <td>$8</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Chickpeas gently cooked with onion herbs and
+                  tomato</td>
+                </tr>
+
+                <tr>
+                  <td>Aloo Gobi</td>
+
+                  <td>$8</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">An ensemble of cauliflower and potatoes
+                  cooked in spices</td>
+                </tr>
+
+                <tr>
+                  <td>Aloo Mutter</td>
+
+                  <td>$8</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Potatoes and peas cooked in light curry</td>
+                </tr>
+              </tbody>
+            </table><br>
+
+            <table class="menu">
+              <thead>
+                <tr>
+                  <th colspan="2">Lunch Breads</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Tandoori Roti</td>
+
+                  <td>$3</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Whole wheat bread with no oil</td>
+                </tr>
+
+                <tr>
+                  <td>Rogini Naan</td>
+
+                  <td>$3</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Crispy baked leavened Buttered bread</td>
+                </tr>
+
+                <tr>
+                  <td>Garlic Naan</td>
+
+                  <td>$4</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Leavened bread with garlic and coriander</td>
+                </tr>
+
+                <tr>
+                  <td>Onion Naan</td>
+
+                  <td>$4</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Naan Stuffed with lightly spiced onions</td>
+                </tr>
+
+                <tr>
+                  <td>Aloo Naan</td>
+
+                  <td>$4</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Leavened bread stuffed with potatoes</td>
+                </tr>
+
+                <tr>
+                  <td>Peshawari Naan</td>
+
+                  <td>$5</td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">Leavened bread stuffed with cashew, raisins
+                  and topped with dry coconut</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>

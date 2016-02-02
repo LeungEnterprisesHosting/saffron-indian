@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+
+    <title>Updating the Specials</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <style>
+      body {
+        font-family: 'Roboto';
+        padding-bottom: 50px;
+      }
+      .jumbotron {
+        background: #B3E5FC;
+      }
+      ol > li {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>How to Update the Specials</h1>
+      </div>
+    </div>
+    <div class="container">
+      <ol>
+        <li>
+          Log into <a href="https://enom.com" target="_blank">eNom</a>.
+        </li>
+        <li>
+          Once you're logged in, scroll down to "Core Tools" and click "Web Hosting".
+        </li>
+        <li>
+          Then, click "Control Panel".
+        </li>
+        <li>
+          Next, click "File Manager".
+        </li>
+        <li>
+          In the File Manager, click the <code>httpdocs</code> folder.
+        </li>
+        <li>
+          Then, click the <code>specials-data</code> folder.
+        </li>
+        <li>
+          Next, click the folder of the current year (for example, <code>2017</code> if it's January 2017) and click the checkbox next to the current month (for example <code>january.json</code>)
+        </li>
+        <li>
+          Then, click "Copy/Move" and change the destination to the next month (for example if it's January 2017): <code>/httpdocs/specials-data/2017/february.json</code>
+        </li>
+        <li>
+          If it's December, you may need to create a new folder for the upcoming year (in the same place where the <code>2016</code> folder is).
+        </li>
+        <li>
+          Next, edit the new file that was copied (<code>february.json</code> in this example) by clicking the pencil icon in the middle/
+        </li>
+        <li>
+          Once you're done editing, ensure that it's in the correct format by copying the file contents into <a href="http://jsonlint.com/" target="_blank">JSONLint.com</a> and fixing any errors.
+        </li>
+        <li>
+          If there are no errors, click save, then go back up to the original <code>specials-data</code> folder.
+        </li>
+        <li>
+          Then, edit the <code>current.json</code> file with the new year and month. (Make sure to change the year if it's December!)
+        </li>
+        <li>
+          Finally, make sure everything is OK by visiting the Specials page: <a href="http://www.saffronofphilly.com/specials" target="_blank">Specials</a>. Please allow up to an hour for it to update fully.
+        </li>
+        <li>
+          If you have any questions, please feel free to email me! <a href="mailto:nathan@leungenterprises.com">nathan@leungenterprises.com</a>.
+        </li>
+      </ol>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="./scripts.js"></script>
+  </body>
+</html>

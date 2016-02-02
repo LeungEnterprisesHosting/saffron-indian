@@ -1,0 +1,31 @@
+extends /_layout
+
+block config
+  - page = "press"
+  - title = "Press | Saffron Indian Kitchen"
+  - description = "Saffron Indian Kitchen has been featured on multiple news outlets for its superior cuisine and exemplary service."
+
+block content
+  .jumbotron#press-jumbotron
+    .container
+      .col-md-11.col-md-offset-1#menu-container
+        h1 Press
+        .row
+          .col-md-10
+            p.
+              Saffron was named a "Best of Philly" restaurant in 2010 and 2015 and is also Zagat rated!<br><br>
+              <b><i>Philadelphia Magazine, 2010</i></b><br>
+              "The layers of flavors at this Bala BYO take our Indian favorites up a notch, starting with the rice:
+              Light, fluffy, and infused with the restaurant’s namesake spice, it’s the perfect starchy building
+              block to a delicious meal. Don’t miss the saag paneer, in which the brilliantly spiced spinach [with a] smoky note shines (rather than the cream, for a change), or the tandoori-kissed lamb cubes in the
+              house special boti kebab."<br><br>
+              <b><i>Suburban Life Magazine, November 2014</i></b><br>
+              "Although the décor is unique, it’s the cuisine that truly makes Saffron stand apart...Whether patrons choose to
+              dine in or enjoy the charms of Indian cuisine off site, Saffron Indian Kitchen delivers an experience unlike any
+              other. Give Bhatia a chance to prove it&mdash;just one chance, he promises—and he’s confident you will be back
+              for more."
+          .col-md-2.hidden-xs
+            img.img-thumbnail(src="./img/best-2010.jpg")
+            br
+            br
+            img.img-thumbnail(src="./img/zagat-rated.jpg")

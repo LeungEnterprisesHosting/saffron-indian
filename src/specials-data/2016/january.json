@@ -1,0 +1,51 @@
+{
+  "appetizers": [
+    {
+      "name": "Spring Dosa",
+      "description": "Rice and lentil batter crepes stuffed with vegetables, tempered with curry leaves and mustard seeds. Served with sambhar (lentil broth) and coconut chutney.",
+      "price": "10"
+    },
+    {
+      "name": "Chicken Mumtaz",
+      "description": "Chicken tenders, spices, chickpea flour, and carom seeds, grilled to perfection.",
+      "price": "9"
+    },
+    {
+      "name": "Lentil Soup",
+      "description": "Yellow lentil soup with a touch of garlic",
+      "price": "4"
+    },
+    {
+      "name": "Tomato Soup",
+      "description": "",
+      "price": "4"
+    }
+  ],
+  "entrees": [
+    {
+     "name": "Punjabi Kadi Pakora",
+     "description": "Fresh yogurt, chickpea flour, light spices, with vegetable fritters.",
+     "price": "14"
+    },
+    {
+      "name": "Chicken Chettinad",
+      "description": "Chicken cubes cooked in a special south Indian blend curry, finished with a touch of coconut milk.",
+      "price": "16"
+    },
+    {
+      "name": "Lamb and Turnip",
+      "description": "Lamb cubes cookied in a light curry sauce with fresh turnips.",
+      "price": "19"
+    },
+    {
+      "name": "Tandoori Shrimp",
+      "description": "Shrimps marinated in yogurt and spices, cooked in the tandoor oven and served on a sizzler.",
+      "price": "19"
+    },
+    {
+      "name": "Tandoori Salmon Tikka",
+      "description": "Fresh Chilean salmon fillets lightly marinated and cooked to perfection in the tandoor oven.",
+      "price": "20"
+    }
+  ]
+}

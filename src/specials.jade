@@ -1,0 +1,57 @@
+extends /_layout
+
+block config
+  - page = "specials"
+  - title = "Specials | Saffron Indian Kitchen"
+  - description = "Saffron Indian Kitchen has a diverse selection of specials that appeal to any taste."
+
+block content
+  .jumbotron#specials-jumbotron
+    .container
+      .col-md-11.col-md-offset-1#specials-container
+        h1 #[span.month Monthly] Specials
+        .row
+          .col-md-5
+            table.menu#appetizers-table
+              thead
+                tr
+                  th(colspan="2") Appetizers
+              tbody
+                tr
+                  td Loading...
+                tr
+                  td
+                    noscript.
+                      We use Javascript to load our latest specials, which you seem to have disabled - please follow the instructions <a href="http://www.enable-javascript.com/" target="_blank">here</a> to enable it.
+                //- Javascript will put specials here
+          .col-md-5.col-md-offset-2
+            table.menu#entrees-table
+              thead
+                tr
+                  th(colspan="2") Entrees
+              tbody
+                tr
+                  td Loading...
+                //- Javascript will put specials here
+
+block scripts
+  script.
+    $(document).ready(function() {
+      $.getJSON("specials-data/current.json", function(data) {
+        $('.month').html(data.month);
+        $.getJSON("specials-data/" + data.year + "/" + data.month.toLowerCase() + ".json", function(data) {
+          function listSpecials(array, tableId) {
+            $('#' + tableId + ' > tbody').html('');
+            array.forEach(function(item) {
+              // Clear the loading text
+              $('#' + tableId + ' > tbody').append(
+                '<tr><td>' + item.name + '</td><td>$' + item.price + '</td></tr>' +
+                '<tr><td colspan="2">' + item.description + '</td></tr>'
+              );
+            });
+          }
+          listSpecials(data.appetizers, "appetizers-table");
+          listSpecials(data.entrees, "entrees-table");
+        });
+      });
+    });

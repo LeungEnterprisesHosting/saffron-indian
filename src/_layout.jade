@@ -1,0 +1,75 @@
+block config
+
+doctype html
+html(lang='en')
+  head
+    title #{title}
+    meta(name='description' content=description)
+    meta(name='viewport' content='width=device-width,initial-scale=1.0')
+    meta(charset='utf-8')
+    meta(name="format-detection" content="telephone=no")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=EB+Garamond|Petit+Formal+Script')
+    // build:css ./css/combined.css
+    link(rel='stylesheet' href='./vendor/animate.css/animate.min.css')
+    link(rel='stylesheet' href='./vendor/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet' href='./vendor/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet' href='./css/index.css')
+    // endbuild
+    
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-65596632-1', 'auto');
+      ga('send', 'pageview');
+
+    block head
+  body
+    nav.navbar-fixed-top
+      button.btn.nav-toggle
+        i.fa.fa-bars.fa-2x
+      .container-fluid
+        ul.nav
+          li(class=page=='home'?'active':undefined)
+            a(href="./") Home
+          li(class=page=='dinner'?'active':undefined)
+            a(href="./dinner") Dinner
+          li(class=page=='lunch'?'active':undefined)
+            a(href="./lunch") Lunch
+          li(class=page=='specials'?'active':undefined)
+            a(href="./specials") Specials
+          li(class=page=='about'?'active':undefined)
+            a(href="./about") About
+          li(class=page=='press'?'active':undefined)
+            a(href="./press") Press
+          br
+          li.btn-social-container
+            a.btn-social(href="https://www.facebook.com/pages/Saffron-Indian-Kitchen/117740861611475")
+              i.fa.fa-facebook
+            a.btn-social(href="https://twitter.com/saffronofphilly")
+              i.fa.fa-twitter
+          li.close-sidebar
+            a
+              i.fa.fa-times
+    .overlay
+    block content
+    .best-wrapper
+      .best-badge.hidden-xs
+        img.img-responsive(src="./img/best-2015.png")
+
+    // build:js ./js/combined.js
+    script(src='./vendor/jquery/dist/jquery.min.js')
+    script(src='./vendor/bootstrap/dist/js/bootstrap.min.js')
+    script(src='./vendor/wow/dist/wow.min.js')
+    script(src='./js/scripts.js')
+    // endbuild
+
+    // build:remove 
+    script(src="/js/localhost.js")
+    // endbuild 
+
+    block scripts
