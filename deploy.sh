@@ -11,6 +11,9 @@ npm run gulp:build || exit 1
 npm run gulp:produce || exit 1
 
 cd dist
+
+echo 'www.saffronofphilly.com' > CNAME
+
 git init
 
 git config user.name "Travis CI"
