@@ -1,4 +1,4 @@
-# Saffron
+# Saffron [![Build Status](https://travis-ci.org/LeungEnterprisesHosting/saffron-indian.svg?branch=master)](https://travis-ci.org/LeungEnterprisesHosting/saffron-indian)
 Boilerplate for making a static site using Gulp.
 
 ## Instructions
