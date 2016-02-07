@@ -12,6 +12,13 @@ $(document).ready(() => {
       $('nav').removeClass('open');
     }
   }
+
+  $('.flash-bar .close-btn').click(closeFlashBar);
+
+  function closeFlashBar() {
+    $('body').removeClass('flash-bar-shown');
+  }
+
   function msieversion() {
     var ua = window.navigator.userAgent;
     var msie = ua.indexOf("MSIE ");

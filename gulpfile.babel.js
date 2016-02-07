@@ -72,7 +72,14 @@ gulp.task('copy-specials', () => {
     .pipe(gulp.dest('./dist/specials-data'));
 });
 
-gulp.task('build', ['jade', 'stylus', 'babel', 'copy-img', 'flatten-fonts', 'copy-vendor', 'copy-specials'], () => {
+// Custom copy function for uploads folder
+gulp.task('copy-uploads', () => {
+  return gulp.src('./src/uploads/**/*')
+    .pipe(gulp.dest('./build/uploads'))
+    .pipe(gulp.dest('./dist/uploads'));
+});
+
+gulp.task('build', ['jade', 'stylus', 'babel', 'copy-img', 'flatten-fonts', 'copy-vendor', 'copy-specials', 'copy-uploads'], () => {
 });
 
 gulp.task('dev', ['build'], () => {

@@ -1,67 +1,114 @@
 /* utlity */
-.small-caps {
-  font-variant: small-caps !important;
-}
+.small-caps
+  font-variant small-caps !important
+  
+box-shadow($base-str,$times)
+  $full-str = '';
+  for $num in (1..$times)
+    if $num > 1
+      $full-str += ', ' + $base-str
+    else
+      $full-str += $base-str
+    
+  box-shadow unquote($full-str)
+
+  
+/* scaffolding */
+
+.flash-bar
+  position fixed
+  z-index 9999
+  width 100%
+  height 35px
+  line-height 35px
+  font-size 1.5rem
+  text-align center
+  background pink
+  box-shadow('0px -1px 1px black', 2)
+  margin-top -35px
+  transition all 0.3s
+  
+  .flash-bar-shown &
+    margin-top 0
+    
+  .close-btn
+    font-size 2rem
+    font-weight bold
+    margin-right 15px
 
 .overlay,
-nav .close-sidebar {
-  display: none;
-}
-body, html {
-  min-height: 100%
-}
-body {
-  font-family: 'EB Garamond', Garamond, serif;
-  color: #333;
-  width: 100%
-}
-h1, .jumbotron h1 {
-  font-family: 'Petit Formal Script', Book Antiqua, Palatino, serif;
-  font-size: 5rem;
-}
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, .8);
-  height: 100vh;
-  width: 100%;
+nav .close-sidebar
+  display none
+
+body,
+html
+  min-height 100%
+
+body
+  font-family 'EB Garamond', Garamond, serif
+  color #333
+  width 100%
+
+h1,
+.jumbotron h1
+  font-family 'Petit Formal Script', Book Antiqua, Palatino, serif
+  font-size 5rem
+
+.overlay
+  position fixed
+  top 0
+  left 0
+  background rgba(0, 0, 0, .8)
+  height 100vh
+  width 100%
   /* so that it is higher than the jumbotron */
-  z-index: 100;
-}
-nav {
-  padding-top: 30px;
-}
-@media screen and (min-width: 1101px) {
-  nav {
-    width: 150px;
-    height: 100%;
-    text-align: center;
-    background: rgba(255,255,255,0.25);
-  }
-}
-nav .nav-toggle {
-  display: none;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  border-radius: 0;
-  color: #333;
-  background: rgba(255,255,255,0.5);
-  transition: all 0.3s;
-}
-nav .nav-toggle:hover {
-  background: rgba(255,255,255,0.7);
-}
-.fa {
-  font-style: normal;
-}
-.fa-1\.5x {
-  font-size: 1.5rem;
-}
-.fa-2x {
-  font-size: 2rem;
-}
+  z-index 100
+  
+.jumbotron
+  // Bootstrap default is 30px
+  .flash-bar-shown &
+    padding-top 70px
+
+nav
+  padding-top 30px
+  
+@media screen and (min-width: 1101px)
+  nav
+    width 150px
+    height 100%
+    text-align center
+    background rgba(white, 0.25)
+
+nav .nav-toggle
+  display none
+  position absolute
+  top 15px  
+  right 15px
+  border-radius 0
+  color #333
+  background rgba(255,255,255,0.5)
+  transition all 0.3s
+  
+  .flash-bar-shown &
+    top 45px
+
+nav
+  .nav-toggle:hover
+    background rgba(white, 0.7)
+  
+  .container-fluid
+    .flash-bar-shown &
+      padding-top 35px
+    
+.fa
+  font-style normal
+
+.fa-1\.5x
+  font-size 1.5rem
+
+.fa-2x
+  font-size 2rem
+
 nav .close-sidebar a:hover {
   background: 0 0;
 }
