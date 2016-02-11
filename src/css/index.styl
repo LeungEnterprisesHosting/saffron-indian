@@ -14,27 +14,36 @@ box-shadow($base-str,$times)
 
   
 /* scaffolding */
+$flash-bar-height = 50px
 
 .flash-bar
+  display table
   position fixed
   z-index 9999
   width 100%
-  height 35px
-  line-height 35px
-  font-size 1.5rem
-  text-align center
+  height $flash-bar-height
   background pink
   box-shadow('0px -1px 1px black', 2)
-  margin-top -35px
+  margin-top -1 * $flash-bar-height
   transition all 0.3s
   
   .flash-bar-shown &
     margin-top 0
     
+  .flash-bar-content
+    display table-cell
+    vertical-align middle
+    font-size 1.5rem
+    text-align center
+    
+    p
+      margin-bottom 0
+    
   .close-btn
     font-size 2rem
     font-weight bold
     margin-right 15px
+    cursor pointer
 
 .overlay,
 nav .close-sidebar
@@ -67,7 +76,7 @@ h1,
 .jumbotron
   // Bootstrap default is 30px
   .flash-bar-shown &
-    padding-top 70px
+    padding-top 35px + $flash-bar-height
 
 nav
   padding-top 30px
@@ -90,7 +99,7 @@ nav .nav-toggle
   transition all 0.3s
   
   .flash-bar-shown &
-    top 45px
+    top 10px + $flash-bar-height
 
 nav
   .nav-toggle:hover
@@ -98,7 +107,7 @@ nav
   
   .container-fluid
     .flash-bar-shown &
-      padding-top 35px
+      padding-top $flash-bar-height
     
 .fa
   font-style normal
