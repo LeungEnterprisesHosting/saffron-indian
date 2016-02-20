@@ -79,7 +79,16 @@ gulp.task('copy-uploads', () => {
     .pipe(gulp.dest('./dist/uploads'));
 });
 
-gulp.task('build', ['jade', 'stylus', 'babel', 'copy-img', 'flatten-fonts', 'copy-vendor', 'copy-specials', 'copy-uploads'], () => {
+// Custom copy function for sitemap
+gulp.task('copy-sitemap', () => {
+  return gulp.src('./src/sitemap.xml')
+    .pipe(gulp.dest('./build'))
+    .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('copy-stuff', ['copy-specials', 'copy-uploads', 'copy-sitemap']);
+
+gulp.task('build', ['jade', 'stylus', 'babel', 'copy-img', 'flatten-fonts', 'copy-vendor', 'copy-stuff'], () => {
 });
 
 gulp.task('dev', ['build'], () => {
