@@ -1,0 +1,41 @@
+{
+  "appetizers": [
+    {
+      "name": "Gobi Bezule",
+      "description": "Battered cauliflower pieces finished in a mild coconut flavor sauce.",
+      "price": "8"
+    },
+    {
+      "name": "Konkani Shrimp",
+      "description": "Pieces of shrimp cooked in a coconut flavored sauce with a touch of garlic, onion mustard seeds and curry leaves, served with paratha bread.",
+      "price": "10"
+    }
+  ],
+  "entrees": [
+    {
+     "name": "Gobi Musallam",
+     "description": "Cauliflower, light spices, yogurt, onions and bell peppers.",
+     "price": "14"
+    },
+    {
+      "name": "Methi Mango Chicken",
+      "description": "Chicken breast cubes, cooked with fenugreek and mango in a curry sauce.",
+      "price": "16"
+    },
+    {
+      "name": "Lamb Daalwala",
+      "description": "Lamb cubes cooked with yellow lentils.",
+      "price": "19"
+    },
+    {
+      "name": "Khatta Meetha Shrimp",
+      "description": "Shrimps cooked in a sweet and tangy sauce with onions, green peppers and carrots.",
+      "price": "19"
+    },
+    {
+      "name": "Tandoori Salmon Tikka",
+      "description": "Fresh Chilean salmon fillets lightly marinated and cooked to perfection in the tandoor oven.",
+      "price": "20"
+    }
+  ]
+}
