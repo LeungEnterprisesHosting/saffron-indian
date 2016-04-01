@@ -1,0 +1,41 @@
+{
+  "appetizers": [
+    {
+      "name": "Spinach and Feta Cheese Samosa",
+      "description": "Mildly spices potatoes, fresh spinach, and feta cheese turnovers.",
+      "price": "7"
+    },
+    {
+      "name": "Sesame Chicken Naan",
+      "description": "Naan stuffed with spiced chicken and topped with sesame seeds.",
+      "price": "6"
+    }
+  ],
+  "entrees": [
+    {
+     "name": "Aloo Daal Palak",
+     "description": "Yellow lentils, potatoes, fresh spinach touch of garlic.",
+     "price": "14"
+    },
+    {
+      "name": "Kashmiri Chicken Kofta Curry",
+      "description": "Minced chicken croquets cooked in a cashew cream sauce.",
+      "price": "16"
+    },
+    {
+      "name": "Lamb Mushroom do Piaza",
+      "description": "Lamb cubes cooked with mushrooms, onions and green peppers in a thick sauce.",
+      "price": "19"
+    },
+    {
+      "name": "Seafood Masala",
+      "description": "Shrimps, tilapia and scallops cooked in tikka masala sauce.",
+      "price": "20"
+    },
+    {
+      "name": "Tandoori Salmon Tikka",
+      "description": "Fresh Chilean salmon fillets lightly marinated and cooked to perfection in the tandoor oven.",
+      "price": "20"
+    }
+  ]
+}
