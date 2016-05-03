@@ -1,0 +1,41 @@
+{
+  "appetizers": [
+    {
+      "name": "Ragda Patties",
+      "description": "Potato tikies topped with dried peas cooked with onions, tomatoes ginger and garlic, finished with tamarind and mint chutneys.",
+      "price": "8"
+    },
+    {
+      "name": "Shrimp Kurkuri",
+      "description": "Shrimps marinated in a light batter, flavored with curry leaves, dipped in coconut powder and golden fried.",
+      "price": "10"
+    }
+  ],
+  "entrees": [
+    {
+     "name": "Mix Vegetable Vindaloo",
+     "description": "Blend of vegetables cooked in a spicy curry sauce with a touch of vinegar.",
+     "price": "15"
+    },
+    {
+      "name": "Chicken Banjara",
+      "description": "Curry chicken cubes cooked with mashed eggplant in a traditional brown curry sauce.",
+      "price": "17"
+    },
+    {
+      "name": "Gobi Gosht",
+      "description": "Lamb Cubes cooked with cauliflower in a curry sauce.",
+      "price": "19"
+    },
+    {
+      "name": "Fish Madras",
+      "description": "Tilapia fillets tempered with mustard seeds and curry leaves, cooked in a coconut flavored sauce.",
+      "price": "19"
+    },
+    {
+      "name": "Tandoori Salmon Tikka",
+      "description": "Fresh Chilean salmon fillets lightly marinated and cooked to perfection in the tandoor oven.",
+      "price": "21"
+    }
+  ]
+}
