@@ -1,0 +1,41 @@
+{
+  "appetizers": [
+    {
+      "name": "Spring Kathi Roll",
+      "description": "Homemade bread stuffed with lightly sautéed vegetables and paneer (hone made cheese).",
+      "price": "8"
+    },
+    {
+      "name": "Kesari Chicken Kabob",
+      "description": "Cubes of chicken breast marinated with yogurt, and spices, cooked in the tandoor oven.",
+      "price": "9"
+    }
+  ],
+  "entrees": [
+    {
+     "name": "Masala Baingan",
+     "description": "Fresh baby eggplant lightly spiced and cooked in tikka masala sauce.",
+     "price": "15"
+    },
+    {
+      "name": "Kabuli Chicken Chole",
+      "description": "Curry chicken cubes cooked with chic-peas in a light curry sauce.",
+      "price": "17"
+    },
+    {
+      "name": "Lamb Keema Masala",
+      "description": "Minced lamb cooked with onions, ginger, garlic, tomatoes, green peas and potatoes.",
+      "price": "19"
+    },
+    {
+      "name": "Shrimp Vegetable Korma",
+      "description": "Shrimps and vegetables cooked in a creamy cashew sauce.",
+      "price": "20"
+    },
+    {
+      "name": "Tandoori Salmon Tikka",
+      "description": "Fresh Chilean salmon fillets lightly marinated and cooked to perfection in the tandoor oven.",
+      "price": "21"
+    }
+  ]
+}
