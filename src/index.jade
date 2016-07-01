@@ -13,6 +13,15 @@ block head
   meta(property="og:url" content="http://www.saffronofphilly.com")
   meta(property="og:site_name" content="SaffronOfPhilly.com")
   meta(property="og:type" content="website")
+  script(type="application/ld+json").
+    {
+      "@context": "http://schema.org",
+      "@type": "Restaurant",
+      "url": "http://www.saffronofphilly.com",
+      "menu": "http://www.saffronofphilly.com/dinner",
+      "servesCuisine": "indian",
+      "acceptsReservations": "Yes",
+    }
   //- Page-specific styles
   style.
     /* For the BG image slider */
