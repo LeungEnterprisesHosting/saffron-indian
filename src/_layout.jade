@@ -11,11 +11,11 @@ html(lang='en')
     meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
 
     link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=EB+Garamond|Petit+Formal+Script')
-    // build:css ./css/combined.css
-    link(rel='stylesheet' href='./vendor/animate.css/animate.min.css')
-    link(rel='stylesheet' href='./vendor/font-awesome/css/font-awesome.min.css')
-    link(rel='stylesheet' href='./vendor/bootstrap/dist/css/bootstrap.min.css')
-    link(rel='stylesheet' href='./css/index.css')
+    // build:css /css/combined.css
+    link(rel='stylesheet' href='/vendor/animate.css/animate.min.css')
+    link(rel='stylesheet' href='/vendor/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet' href='/vendor/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet' href='/css/index.css')
     // endbuild
     
     script.
@@ -50,17 +50,17 @@ html(lang='en')
       .container-fluid
         ul.nav
           li(class=page=='home'?'active':undefined)
-            a(href="./") Home
+            a(href="/") Home
           li(class=page=='dinner'?'active':undefined)
-            a(href="./dinner") Dinner
+            a(href="/dinner") Dinner
           li(class=page=='lunch'?'active':undefined)
-            a(href="./lunch") Lunch
+            a(href="/lunch") Lunch
           li(class=page=='specials'?'active':undefined)
-            a(href="./specials") Specials
+            a(href="/specials") Specials
           li(class=page=='about'?'active':undefined)
-            a(href="./about") About
+            a(href="/about") About
           li(class=page=='press'?'active':undefined)
-            a(href="./press") Press
+            a(href="/press") Press
           br
           li.btn-social-container
             a.btn-social(href="https://www.facebook.com/pages/Saffron-Indian-Kitchen/117740861611475")
@@ -74,13 +74,13 @@ html(lang='en')
     block content
     .best-wrapper
       .best-badge.hidden-xs
-        img.img-responsive(src="./img/best-2015.png")
+        img.img-responsive(src="/img/best-2015.png")
 
-    // build:js ./js/combined.js
-    script(src='./vendor/jquery/dist/jquery.min.js')
-    script(src='./vendor/bootstrap/dist/js/bootstrap.min.js')
-    script(src='./vendor/wow/dist/wow.min.js')
-    script(src='./js/scripts.js')
+    // build:js /js/combined.js
+    script(src='/vendor/jquery/dist/jquery.min.js')
+    script(src='/vendor/bootstrap/dist/js/bootstrap.min.js')
+    script(src='/vendor/wow/dist/wow.min.js')
+    script(src='/js/scripts.js')
     // endbuild
 
     // build:remove 
