@@ -40,9 +40,6 @@ block head
     }
   //- Page-specific styles
   style.
-    html {
-      overflow-x: hidden;
-    }
     body {
       position: relative;
       overflow-x: hidden;
@@ -91,37 +88,3 @@ block content
   #leungenterprises.hidden-xs.
     #[a(href="https://www.leungenterprises.com" target="_blank") Web Design] by
     #[a(href="https://www.leungenterprises.com" target="_blank") Leung Enterprises]
-
-block scripts
-  script.
-    /* IE-specific code */
-    (function(){
-      function msieversion() {
-        var ua = window.navigator.userAgent;
-        var msie = ua.indexOf("MSIE ");
-
-        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
-          var css = "<style>" +
-                      "#landing-jumbotron {" +
-                          "display: block;" +
-                          "margin: 0 auto;" +
-                          "width: 40%;" +
-                          "background: transparent" +
-                      "}" +
-                    "</style>";
-          console.log(css);
-          $('head').append(css);
-        }
-      }
-      msieversion();
-    })();
-  script.
-    var mobile = window.innerWidth < 768;
-    if (!mobile) {
-      bgSlider({images:['./img/food/naan.jpg', 'http://i.imgur.com/wZ7jL14.jpg', 'http://i.imgur.com/BJJmvlr.jpg']});
-    } else {
-      /* Mobile fallback */
-      $('#landing-jumbotron').css('background', 'url("./img/food/naan.jpg")');
-      $('#landing-jumbotron').css('background-size', 'cover');
-      $('#landing').css('margin-top', '48px');
-    }
