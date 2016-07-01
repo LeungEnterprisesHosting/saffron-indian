@@ -1,0 +1,144 @@
+extends /_layout
+
+block config
+  - page = 'ambler'
+  - title = "Ambler | Saffron Indian Kitchen"
+  - description = "Saffron Ambler offers a unique, modern experience in traditional Indian cuisine on Main Street."
+
+block head
+  meta(name="keywords" content="indian, kitchen, saffron, ambler, indian restaurant, bala, cynwyd, indian kitchen, indian food")
+  meta(property="fb:page_id" content="161553280541265")
+  meta(property="og:title" content="Ambler's Best Indian Cuisine - Saffron")
+  meta(property="og:description" content="Saffron Indian Kitchen, located in Ambler, PA, offers a unique ambience which is reinforced by the friendly staff who aim to make your dining experience one to remember.")
+  meta(property="og:url" content="http://www.saffronofphilly.com/locations/ambler")
+  meta(property="og:site_name" content="SaffronOfPhilly.com")
+  meta(property="og:type" content="website")
+  script(type="application/ld+json").
+    {
+      "@context": "http://schema.org",
+      "@type": "Restaurant",
+      "url": "http://www.saffronofphilly.com",
+      "menu": "http://www.saffronofphilly.com/dinner",
+      "servesCuisine": "indian",
+      "acceptsReservations": "Yes",
+      "email": "mailto:saffronbala@gmail.com",
+      "photo": "https://i.imgur.com/wZ7jL14.jpg",
+      "logo": "https://pbs.twimg.com/profile_images/612714669200023552/vkpmXhou.png",
+      "telephone": "+1-215-540-0237",
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+1-215-540-0237",
+        "contactType": "customer service"
+      }],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ambler",
+        "addressRegion": "PA",
+        "postalCode": "19002",
+        "streetAddress": "60 E. Butler Ave."
+      }
+    }
+  //- Page-specific styles
+  style.
+    /* For the BG image slider */
+    html {
+      overflow-x: hidden;
+    }
+    body {
+      position: relative;
+      overflow-x: hidden;
+      /* Fallback background */
+      background: url('./img/food/naan.jpg');
+      background-size: cover;
+    }
+    .bg-slider-img {
+      position: fixed;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      min-height: 100vh;
+      width: 100%;
+      background-size: cover;
+      background-position: center right;
+      /*
+      -webkit-filter: blur(5px);
+      -moz-filter: blur(5px);
+      -o-filter: blur(5px);
+      -ms-filter: blur(5px);
+      filter: blur(5px);
+      */
+    }
+    /* End BG Image slider */
+    #landing-jumbotron {
+      background: rgba(255,255,255,0.1);
+    }
+    #leungenterprises {
+      position: fixed;
+      right: 15px;
+      bottom: 15px;
+    }
+    #leungenterprises a {
+      color: #222;
+    }
+
+block content
+  .jumbotron#landing-jumbotron
+    .container-fluid
+      #landing
+        #logo
+          h1 Saffron
+          h2.text-lowercase Indian Kitchen
+        br
+        p.
+          Saffron Ambler offers a unique, modern experience in traditional Indian cuisine on Ambler Main Street, which is reinforced by the friendly staff who aim to make your dining experience one to remember.
+        br
+        p.
+          60 E. Butler Ave.<br>
+          Ambler, PA 19002<br>
+          215 - 540 - 0237
+        br
+        p.
+          #[span(style='font-variant: small-caps;') restaurant hours:]
+          <br>
+          Mon - Fri: 11:30 AM - 10:00 PM<br>
+          Sat - Sun: 12:00 PM - 10:00 PM
+  #leungenterprises.hidden-xs.
+    #[a(href="https://www.leungenterprises.com" target="_blank") Web Design] by
+    #[a(href="https://www.leungenterprises.com" target="_blank") Leung Enterprises]
+
+block scripts
+  script.
+    /* Mini jQuery BG Slider */
+    var bgSlider=function(e){"undefined"==typeof e&&(e={}),"undefined"==typeof e.images&&(e.images=["http://i.imgur.com/gz0Yq3E.jpg","http://i.imgur.com/e3Fjb93.jpg","http://i.imgur.com/8FoJQYg.jpg"]),"undefined"==typeof e.el&&(e.el="body"),"undefined"==typeof e.animDuration&&(e.animDuration=1e3),"undefined"==typeof e.slideDuration&&(e.slideDuration=5e3),e.slideDuration<1.5*e.animDuration&&jQuery.error("The slide duration must be at least 50% longer than the animation duration."),e.images.length<2&&jQuery.error("You must select at least two images.");var i=e.images;for(var t in i)$(e.el).append('<div class="bg-slider-img", id="img'+t+'"></div>'),$("#img"+t).css("background-image",'url("'+i[t]+'")'),$("#img"+t).css("left",String(100*t)+"%");var n=0,a=function(){$(".bg-slider-img").animate({left:"-=100%"},e.animDuration,function(){if((n-(i.length-1))%i.length===0){var e=(n-(i.length-1))/i.length%i.length;$("#img"+e).css("left",String(100*(i.length-1))+"%")}n=(n+1)%(i.length*i.length)})};setInterval(a,e.slideDuration)};
+  script.
+    /* IE-specific code */
+    (function(){
+      function msieversion() {
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf("MSIE ");
+
+        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
+          var css = "<style>" +
+                      "#landing-jumbotron {" +
+                          "display: block;" +
+                          "margin: 0 auto;" +
+                          "width: 40%;" +
+                          "background: transparent" +
+                      "}" +
+                    "</style>";
+          console.log(css);
+          $('head').append(css);
+        }
+      }
+      msieversion();
+    })();
+  script.
+    var mobile = window.innerWidth < 768;
+    if (!mobile) {
+      bgSlider({images:['./img/food/naan.jpg', 'http://i.imgur.com/wZ7jL14.jpg', 'http://i.imgur.com/BJJmvlr.jpg']});
+    } else {
+      /* Mobile fallback */
+      $('#landing-jumbotron').css('background', 'url("./img/food/naan.jpg")');
+      $('#landing-jumbotron').css('background-size', 'cover');
+      $('#landing').css('margin-top', '48px');
+    }
