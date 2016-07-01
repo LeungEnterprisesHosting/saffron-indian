@@ -9,4 +9,3 @@ node_js:
 cache:
   directories:
     - node_modules
-    - src/vendor
