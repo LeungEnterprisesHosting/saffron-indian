@@ -64,8 +64,11 @@ block head
       right: 15px;
       bottom: 15px;
     }
-    #leungenterprises a {
+    #leungenterprises a, a.location-link {
       color: #222;
+    }
+    .location-link:hover {
+      color: #111;
     }
 
 block content
@@ -76,11 +79,15 @@ block content
           h1 Saffron
           h2.text-lowercase Indian Kitchen
         br
+        a.location-link(href='/bala-cynwyd')
+          span(style="font-variant: small-caps; text-transform: uppercase;") Bala Cynwyd
         p.
           145 Montgomery Ave.<br>
           Bala Cynwyd, PA 19004<br>
           484 - 278 - 4112
         br
+        a.location-link(href='/ambler')
+          span(style="font-variant: small-caps; text-transform: uppercase;") Ambler
         p.
           60 E. Butler Ave.<br>
           Ambler, PA 19002<br>
