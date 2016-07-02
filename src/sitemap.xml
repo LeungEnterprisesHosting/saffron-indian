@@ -6,38 +6,34 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>http://www.saffronofphilly.com/</loc>
-  <lastmod>2016-02-19T16:13:44+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>1.00</priority>
+  <lastmod>2016-07-02T00:33:14+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.saffronofphilly.com/dinner</loc>
-  <lastmod>2016-02-19T16:13:44+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
+  <lastmod>2016-07-02T00:33:14+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.saffronofphilly.com/lunch</loc>
-  <lastmod>2016-02-19T16:13:44+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
+  <lastmod>2016-07-02T00:33:14+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.saffronofphilly.com/specials</loc>
-  <lastmod>2016-02-19T16:13:44+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
+  <lastmod>2016-07-02T00:33:14+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.saffronofphilly.com/about</loc>
-  <lastmod>2016-02-19T16:13:44+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
+  <lastmod>2016-07-02T00:33:14+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.saffronofphilly.com/press</loc>
-  <lastmod>2016-02-19T16:13:44+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
+  <lastmod>2016-07-02T00:33:14+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.saffronofphilly.com/bala-cynwyd</loc>
+  <lastmod>2016-07-02T00:33:14+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.saffronofphilly.com/ambler</loc>
+  <lastmod>2016-07-02T00:33:14+00:00</lastmod>
 </url>
 </urlset>
