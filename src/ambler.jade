@@ -62,8 +62,13 @@ block head
   style.
     /* center jumbotron and restrict width */
     #landing-jumbotron {
-      width: 50%;
+      width: 90%;
       margin: 0 auto;
+    }
+    @media (min-width: 768px) {
+      #landing-jumbotron {
+        width: 50%;
+      }
     }
 
 block content
