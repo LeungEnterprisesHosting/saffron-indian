@@ -1,0 +1,36 @@
+{
+  "appetizers": [
+    {
+      "name": "Aloo Bonda",
+      "description": "Lightly spiced potatoes with a touch of mustard seeds and curry leaves, dipped in chickpea batter and golden fried.",
+      "price": "6"
+    },
+    {
+      "name": "Pudina Kabob",
+      "description": "Chicken breast, fresh mint, ginger, garlic, light spices. Cooked in tandoor oven.",
+      "price": "9"
+    }
+  ],
+  "entrees": [
+    {
+     "name": "Tandoori Paneer Tikka",
+     "description": "Cubes of paneer (homemade cheese) marinated with yogurt and spices cooked in the clay oven.",
+     "price": "15"
+    },
+    {
+      "name": "Nargisi Chicken Kofta",
+      "description": "Boiled egg coated with lightly spiced minced chicken, topped with a cashew cream sauce.",
+      "price": "16"
+    },
+    {
+      "name": "Gobi Gosht",
+      "description": "Lamb cubes cooked with lightly spiced cauliflower.",
+      "price": "19"
+    },
+    {
+      "name": "Shrimp Saag",
+      "description": "Slightly sautéed shrimps cooked with fresh spinach and spices.",
+      "price": "20"
+    }
+  ]
+}
