@@ -1,0 +1,41 @@
+{
+  "appetizers": [
+    {
+      "name": "Palak Shorba (Spinach Soup)",
+      "description": "Baby spinach, touch of ginger and garlic pureed with spices.",
+      "price": "5"
+    },
+    {
+      "name": "Spinach Feta Samosas",
+      "description": "Shrimps marinated in a light batter, flavored with curry leaves, dipped in coconut powder and golden fried.",
+      "price": "7"
+    },
+    {
+      "name": "Sesame Chicken Naan",
+      "description": "Naan stuffed with spiced chicken topped with sesame seeds.",
+      "price": "6"
+    }
+  ],
+  "entrees": [
+    {
+     "name": "Gobi Shulgum Ki Subzi",
+     "description": "Turnip, cauliflower, bell peppers cooked with light spices.",
+     "price": "15"
+    },
+    {
+      "name": "Methi Mango Chicken",
+      "description": "Chicken cubes cooked with fenugreek and a touch of mango pulp in a light curry sauce.",
+      "price": "17"
+    },
+    {
+      "name": "Kashmiri Lamb Curry",
+      "description": "Lamb cubes cooked with a cardamom infused curry sauce.",
+      "price": "19"
+    },
+    {
+      "name": "Konkani Chilly Shrimp",
+      "description": "Shrimps cooked with onions tomatoes jalapenos, light spices and a touch of coconut milk.",
+      "price": "20"
+    }
+  ]
+}
