@@ -1,0 +1,41 @@
+{
+  "appetizers": [
+    {
+      "name": "Palak Shorba (Spinach Soup)",
+      "description": "Baby spinach, touch of ginger and garlic pureed with spices.",
+      "price": "5"
+    },
+    {
+      "name": "Lamb Keema Samosa",
+      "description": "Turnovers stuffed with spiced minced lamb.",
+      "price": "8"
+    },
+    {
+      "name": "Gobi Manchurian",
+      "description": "Battered cauliflower pieces tossed in a tangy sauce with a touch of chilly and soya sauce.",
+      "price": "7"
+    }
+  ],
+  "entrees": [
+    {
+     "name": "Paneer Lababdar",
+     "description": "Paneer cubes cooked in a tomato sauce with a touch of cashew paste and spices.",
+     "price": "15"
+    },
+    {
+      "name": "Murg Rajmah",
+      "description": "Chicken cubes cooked in a light curry sauce with kidney beans.",
+      "price": "17"
+    },
+    {
+      "name": "Lazeez Gosht Handi",
+      "description": "Lamb Cubes cooked with special sauce made with a touch of yogurt, cashew paste and light spices.",
+      "price": "19"
+    },
+    {
+      "name": "Malvani Salmon Curry",
+      "description": "A curry from Konkan region with onions, tomatoes, spices and fresh grated coconut.",
+      "price": "21"
+    }
+  ]
+}
