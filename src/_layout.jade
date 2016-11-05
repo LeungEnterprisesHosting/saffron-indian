@@ -28,22 +28,19 @@ html(lang='en')
       ga('send', 'pageview');
 
     block head
-  body
-    //- .flash-bar-shown (body class)
-    //- Uncomment this to show bar
-      .flash-bar
-        .flash-bar-content
-          p.
-            #[i.fa.fa-heart]
-            &nbsp;
-  
-            Join us for a special Valentine's Day dinner for two on February 13th and 14th.
-            &nbsp;&nbsp;#[a.btn.btn-default.btn-xs(href='/uploads/VDSpecial.pdf' target="_blank") View Menu]
-  
-            &nbsp;
-            #[i.fa.fa-heart]
-            
-            #[span.pull-right.close-btn &times;]
+  body.flash-bar-shown
+    .flash-bar
+      .flash-bar-content
+        p.
+          #[i.fa.fa-heart]
+          &nbsp;
+
+          We are opening a new location soon in Wayne, PA, on 522 West Lancaster Ave!
+
+          &nbsp;
+          #[i.fa.fa-cutlery]
+
+          #[span.pull-right.close-btn &times;]
     nav.navbar-fixed-top
       button.btn.nav-toggle
         i.fa.fa-bars.fa-2x
