@@ -28,19 +28,21 @@ html(lang='en')
       ga('send', 'pageview');
 
     block head
-  body.flash-bar-shown
-    .flash-bar
-      .flash-bar-content
-        p.
-          #[i.fa.fa-cutlery]
-          &nbsp;
+  body
+    //- .flash-bar-shown - this is a body class
+    //-
+      .flash-bar
+        .flash-bar-content
+          p.
+            #[i.fa.fa-cutlery]
+            &nbsp;
 
-          We are opening a new location soon in Wayne, PA, on 522 West Lancaster Ave!
+            We are opening a new location soon in Wayne, PA, on 522 West Lancaster Ave!
 
-          &nbsp;
-          #[i.fa.fa-cutlery]
+            &nbsp;
+            #[i.fa.fa-cutlery]
 
-          #[span.pull-right.close-btn &times;]
+            #[span.pull-right.close-btn &times;]
     nav.navbar-fixed-top
       button.btn.nav-toggle
         i.fa.fa-bars.fa-2x
@@ -71,6 +73,7 @@ html(lang='en')
     block content
     .best-wrapper
       .best-badge.hidden-xs
+        img.img-responsive(src="https://i.imgur.com/DXOqWcE.png")
         img.img-responsive(src="/img/best-2015.png")
         img.img-responsive(src="https://i.imgur.com/j57VVyM.png")
 
