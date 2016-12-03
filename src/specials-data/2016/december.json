@@ -1,0 +1,41 @@
+{
+  "appetizers": [
+    {
+      "name": "Carrot Corn Soup",
+      "description": "Carrots, corn, onions, spices with a touch of cream.",
+      "price": "5"
+    },
+    {
+      "name": "Salmon Tikki",
+      "description": "Salmon, potatoes, spices, crumb fried to perfection.",
+      "price": "9"
+    },
+    {
+      "name": "Spring Dosa",
+      "description": "Rice and lentil batter crepe stuffed with lightly spiced vegetables, served with sambhar and coconut chutney.",
+      "price": "10"
+    }
+  ],
+  "entrees": [
+    {
+     "name": "Baigan Masala",
+     "description": "Baby eggplant, lightly spiced and baked, cooked in tikka masala sauce.",
+     "price": "15"
+    },
+    {
+      "name": "Malai Chicken Curry",
+      "description": "Chicken cubes cooked in a light curry with a touch of cream cheese.",
+      "price": "17"
+    },
+    {
+      "name": "Gobi Gosht",
+      "description": "Lamb Cubes cooked with cauliflower in a curry sauce.",
+      "price": "19"
+    },
+    {
+      "name": "Honey Garlic Shrimp",
+      "description": "Shrimps cooked with honey, garlic, spices and green peppers.",
+      "price": "20"
+    }
+  ]
+}
