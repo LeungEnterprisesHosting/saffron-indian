@@ -1,0 +1,41 @@
+{
+  "appetizers": [
+    {
+      "name": "Carrot Corn Soup",
+      "description": "Carrots, corn, onions, spices with a touch of cream.",
+      "price": "5"
+    },
+    {
+      "name": "Vegetable Manchurian",
+      "description": "Vegetable croquets tossed in a tangy sauce, with a touch of soya sauce and scallions.",
+      "price": "8"
+    },
+    {
+      "name": "Almond Crusted Shrimps",
+      "description": "Shrimps dipped in a batter made from chic-pea flour, almond light spices, golden fried.",
+      "price": "11"
+    }
+  ],
+  "entrees": [
+    {
+     "name": "Bharwan Mirch",
+     "description": "Bell peppers stuffed with lightly spices mix of potatoes and paneer(cheese), topped with tikka masala sauce.",
+     "price": "15"
+    },
+    {
+      "name": "Garlic Chicken",
+      "description": "Tandoori malai tikka pieces cooked with a touch of garlic, onions and green peppers.",
+      "price": "17"
+    },
+    {
+      "name": "Saffron Special Biryani",
+      "description": "Lamb, shrimps and chicken cooked with aromatic basmati rice and spices.",
+      "price": "19"
+    },
+    {
+      "name": "Malbari Fish Curry",
+      "description": "Tilapia fillet cooked in special curry with touch of fennel and tamarind.",
+      "price": "19"
+    }
+  ]
+}
