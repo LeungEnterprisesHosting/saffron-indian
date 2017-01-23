@@ -25,6 +25,47 @@ block head
       "photo": "https://i.imgur.com/wZ7jL14.jpg",
       "logo": "https://pbs.twimg.com/profile_images/612714669200023552/vkpmXhou.png"
     }
+  //- Caviar styles
+  style.
+    #caviar-container {
+      margin: 0 auto;
+      text-align: center;
+      height: 70px;
+      /* 70px - 10px = 60px */
+      padding-bottom: 10px;
+    }
+    .caviar-merchant-widget-disc-1 {
+      /* this is all to make it 60px and acct for scaling */
+      margin-top: -30px;
+      transform: scale(0.5);
+    }
+    .caviar-merchant-widget-disc-1, .caviar-merchant-widget-disc-1 a {
+      display: inline-block;
+      width: 120px;
+      min-height: 120px;
+      padding: 0;
+    }
+    .caviar-merchant-widget-disc-1 a span {
+    visibility: hidden;
+    }
+    .caviar-merchant-widget-link-disc-1 {
+    display: block;
+    background-image: url('https://img.trycaviar.com/raw/widget/v3/caviar-badges-sprite-v3.png');
+    background-position: -1200px -0px;
+    }
+    .caviar-merchant-widget-link-disc-1:hover {
+    background-position: -1320px -0px;
+    }
+    .caviar-merchant-widget-link-disc-1:active {
+    background-position: -1440px -0px;
+    }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
+    .caviar-merchant-widget-link-disc-1 {
+      display: block;
+      background-image: url('https://img.trycaviar.com/raw/widget/v3/caviar-badges-sprite-v3@2x.png');
+      background-size: 1560px 390px;
+    }
+    }
   //- Page-specific styles
   style.
     /* For the BG image slider */
@@ -85,6 +126,14 @@ block content
           145 Montgomery Ave.<br>
           Bala Cynwyd, PA 19004<br>
           484 - 278 - 4112
+        div#caviar-container.
+          <div class="caviar-merchant-widget-disc-1">
+            <div class="caviar-merchant-widget-content" style="text-align: center;">
+              <a class="caviar-merchant-widget-link-disc-1" href=
+              "https://www.trycaviar.com/t/main-line/saffron-indian-kitchen-4427?groups=f_online__d_dwidget-3-disc-1__p_marketing__c_merchant-links&utm_medium=localmarketing&utm_source=widget&utm_campaign=saffron-indian-kitchen-4427&utm_term=main-line&utm_content=saffron-indian-kitchen-4427&cvosrc=localmarketing.widget.saffron-indian-kitchen-4427&cvo_campaign=saffron-indian-kitchen-4427">
+              <span>Saffron Indian Kitchen, delivered by Caviar</span></a>
+            </div>
+          </div>
         br
         a.location-link(href='/ambler')
           span(style="font-variant: small-caps; text-transform: uppercase;") Ambler
@@ -92,6 +141,8 @@ block content
           60 E. Butler Ave.<br>
           Ambler, PA 19002<br>
           215 - 540 - 0237
+        span(style="font-variant: small-caps; text-transform: uppercase;") Ambler Delivery#[br]Not Available
+        br
         br
         p.
           #[span(style='font-variant: small-caps;') restaurant hours:]
@@ -105,6 +156,7 @@ block content
     #[a(href="https://www.leungenterprises.com" target="_blank") Leung Enterprises]
 
 block scripts
+  script(src='https://d2nslu7z045kl0.cloudfront.net/caviar-widgets-v3.js')
   script.
     /* Mini jQuery BG Slider */
     var bgSlider=function(e){"undefined"==typeof e&&(e={}),"undefined"==typeof e.images&&(e.images=["http://i.imgur.com/gz0Yq3E.jpg","http://i.imgur.com/e3Fjb93.jpg","http://i.imgur.com/8FoJQYg.jpg"]),"undefined"==typeof e.el&&(e.el="body"),"undefined"==typeof e.animDuration&&(e.animDuration=1e3),"undefined"==typeof e.slideDuration&&(e.slideDuration=5e3),e.slideDuration<1.5*e.animDuration&&jQuery.error("The slide duration must be at least 50% longer than the animation duration."),e.images.length<2&&jQuery.error("You must select at least two images.");var i=e.images;for(var t in i)$(e.el).append('<div class="bg-slider-img", id="img'+t+'"></div>'),$("#img"+t).css("background-image",'url("'+i[t]+'")'),$("#img"+t).css("left",String(100*t)+"%");var n=0,a=function(){$(".bg-slider-img").animate({left:"-=100%"},e.animDuration,function(){if((n-(i.length-1))%i.length===0){var e=(n-(i.length-1))/i.length%i.length;$("#img"+e).css("left",String(100*(i.length-1))+"%")}n=(n+1)%(i.length*i.length)})};setInterval(a,e.slideDuration)};
