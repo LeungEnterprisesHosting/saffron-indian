@@ -1,0 +1,41 @@
+{
+  "appetizers": [
+    {
+      "name": "Lentil Soup",
+      "description": "Yellow lentil soup with a touch of garlic.",
+      "price": "4"
+    },
+    {
+      "name": "Chicken Seekh Kabob",
+      "description": "Minced chicken lightly spiced, cooked in the tandoor oven.",
+      "price": "9"
+    },
+    {
+      "name": "Beetroot Tikki",
+      "description": "Beetroot, potatoes and spiced patties, fried to perfection.",
+      "price": "6"
+    }
+  ],
+  "entrees": [
+    {
+     "name": "Punjabi Kadi Pakora",
+     "description": "A traditional dish from Punjab made with yogurt, chic-pea flour, spices and mix vegetables fritters.",
+     "price": "15"
+    },
+    {
+      "name": "Nargisi Chicken Kofta",
+      "description": "Chicken and fresh spinach croquets, in a creamy cashew sauce.",
+      "price": "17"
+    },
+    {
+      "name": "Lamb and Turnip",
+      "description": "Lamb Cubes cooked with lightly spiced turnip in a thick curry sauce.",
+      "price": "19"
+    },
+    {
+      "name": "Seafood Vindaloo",
+      "description": "Shrimps, tilapia and scallops cooked in a spicy curry sauce with a touch of garlic.",
+      "price": "21"
+    }
+  ]
+}

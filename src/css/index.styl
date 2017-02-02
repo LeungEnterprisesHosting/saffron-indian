@@ -1,7 +1,7 @@
 /* utlity */
 .small-caps
   font-variant small-caps !important
-  
+
 box-shadow($base-str,$times)
   $full-str = '';
   for $num in (1..$times)
@@ -9,10 +9,10 @@ box-shadow($base-str,$times)
       $full-str += ', ' + $base-str
     else
       $full-str += $base-str
-    
+
   box-shadow unquote($full-str)
 
-  
+
 /* scaffolding */
 $flash-bar-height = 50px
 
@@ -26,19 +26,19 @@ $flash-bar-height = 50px
   box-shadow('0px -1px 1px black', 2)
   margin-top -1 * $flash-bar-height
   transition all 0.3s
-  
+
   .flash-bar-shown &
     margin-top 0
-    
+
   .flash-bar-content
     display table-cell
     vertical-align middle
     font-size 1.5rem
     text-align center
-    
+
     p
       margin-bottom 0
-    
+
   .close-btn
     font-size 2rem
     font-weight bold
@@ -72,7 +72,7 @@ h1,
   width 100%
   /* so that it is higher than the jumbotron */
   z-index 100
-  
+
 .jumbotron
   // Bootstrap default is 30px
   .flash-bar-shown &
@@ -80,7 +80,7 @@ h1,
 
 nav
   padding-top 30px
-  
+
 @media screen and (min-width: 1101px)
   nav
     width 150px
@@ -91,24 +91,24 @@ nav
 nav .nav-toggle
   display none
   position absolute
-  top 15px  
+  top 15px
   right 15px
   border-radius 0
   color #333
   background rgba(255,255,255,0.5)
   transition all 0.3s
-  
+
   .flash-bar-shown &
     top 10px + $flash-bar-height
 
 nav
   .nav-toggle:hover
     background rgba(white, 0.7)
-  
+
   .container-fluid
     .flash-bar-shown &
       padding-top $flash-bar-height
-    
+
 .fa
   font-style normal
 
@@ -231,6 +231,11 @@ nav #social>a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   */
+
+  @media (max-width: 1099px) {
+    padding-top: 120px;
+    padding-bottom: 30px;
+  }
 }
 #landing-jumbotron #landing {
   margin: 0 auto;
@@ -255,17 +260,51 @@ nav #social>a:hover {
   letter-spacing: 0.15em;
 }
 .best-wrapper {
-  position: fixed;
-  right: 30px;
-  top: 30px;
-}
-.best-wrapper > .best-badge {
-  margin-top: 15px;
-  width: 120px;
-  
-  > img {
+
+  @media (max-width: 1099px) {
+    position: absolute;
+    top: 0px;
     margin-top: 15px;
+    width: 100%;
+
+    & > .best-badge {
+      text-align: center;
+
+      & > img {
+        display: inline-block;
+        width: 120px;
+        margin: 15px;
+      }
+    }
   }
+
+  // 120px +15px margin uses up space quick!
+  // Also order matters here, it needs to cascade
+  @media (max-width: 500px) {
+    top: 30px;
+
+    > .best-badge > img {
+      margin: 10px;
+      width: 90px;
+    }
+  }
+
+  @media (min-width: 1100px) {
+    position: fixed;
+    right: 30px;
+    top: 30px;
+
+    & > .best-badge {
+      margin-top: 15px;
+      width: 120px;
+
+      > img {
+        margin-top: 15px;
+      }
+    }
+  }
+
+
 }
 #menu-jumbotron {
   background: transparent;
@@ -403,7 +442,6 @@ nav #social>a:hover {
   filter: blur(5px);
 }
 #about-jumbotron>.container>.col-md-11, #menu-jumbotron>.container>.col-md-11, #lunch-jumbotron>.container>.col-md-11, #press-jumbotron>.container>.col-md-11, #specials-jumbotron>.container>.col-md-11 {
-  /* margin-top: 60px; */
   background: rgba(255, 255, 255, .4);
   border: none;
   padding: 30px;
@@ -463,6 +501,13 @@ nav #social>a:hover {
     text-align: center;
   }
   #about-jumbotron>.container>.col-md-11, #menu-jumbotron>.container>.col-md-11, #lunch-jumbotron>.container>.col-md-11, #press-jumbotron>.container>.col-md-11, #specials-jumbotron>.container>.col-md-11 {
-    margin-top: 45px
+    margin-top: 130px
+  }
+}
+
+#ubereats {
+  img {
+    border-radius: 50%;
+    height: 60px;
   }
 }

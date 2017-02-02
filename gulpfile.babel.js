@@ -52,6 +52,12 @@ gulp.task('copy-img', () => {
     .pipe(gulp.dest('./build/img'));
 });
 
+gulp.task('copy-icons', () => {
+  return gulp.src('./src/icons/**/*')
+    .pipe(gulp.dest('./build/icons'))
+    .pipe(gulp.dest('./dist/icons'));
+});
+
 // Copies all fonts into the `build/fonts` directory
 gulp.task('flatten-fonts', () => {
   return gulp.src(['./src/vendor/**/*.{eot,svg,ttf,woff,woff2}', '!./src/vendor/Ionicons/src/*'])
@@ -86,7 +92,7 @@ gulp.task('copy-sitemap', () => {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('copy-stuff', ['copy-specials', 'copy-uploads', 'copy-sitemap']);
+gulp.task('copy-stuff', ['copy-icons', 'copy-specials', 'copy-uploads', 'copy-sitemap']);
 
 gulp.task('build', ['jade', 'stylus', 'babel', 'copy-img', 'flatten-fonts', 'copy-vendor', 'copy-stuff'], () => {
 });
@@ -97,6 +103,7 @@ gulp.task('dev', ['build'], () => {
   gulp.watch('./src/js/*.js', ['babel']);
 
   gulp.watch('./src/img/**/*', ['copy-img']);
+  gulp.watch('./src/icons/**/*', ['copy-icons']);
   gulp.watch('./src/vendor/**/*', ['flatten-fonts', 'copy-vendor']);
 
   console.log("Watching files!");
