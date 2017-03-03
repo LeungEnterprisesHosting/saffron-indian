@@ -1,0 +1,41 @@
+{
+  "appetizers": [
+    {
+      "name": "Vegetable Uttapan",
+      "description": "Pancake made from rice and lentil, served with sambhar and coconut chutney. Topped with onions, tomatoes, and a touch of cilantro.",
+      "price": "6"
+    },
+    {
+      "name": "Chicken Uttapan",
+      "description": "Pancake made from rice and lentil, served with sambhar and coconut chutney. Topped with lightly spiced chicken.",
+      "price": "8"
+    },
+    {
+      "name": "Konkani Shrimp",
+      "description": "Pieces of shrimps cooked with mustard seeds, curry leaves and coconut milk, served with paratha bread.",
+      "price": "10"
+    }
+  ],
+  "entrees": [
+    {
+     "name": "Tandoori Paneer Tikka",
+     "description": "Cubes of homemade cheese (paneer) marinated in yogurt and spices, grilled in the tandoor.",
+     "price": "15"
+    },
+    {
+      "name": "Achari Chicken",
+      "description": "Chicken cubes cooked in curry with a touch of spicy pickle flavor.",
+      "price": "17"
+    },
+    {
+      "name": "Garlic Lamb Kadai",
+      "description": "Lamb cubes cooked with a touch of garlic, onions, and green pepper in a curry sauce..",
+      "price": "19"
+    },
+    {
+      "name": "Seafood Masala",
+      "description": "Shrimps, scallops and tilapia fillets cooked in tikka masala sauce.",
+      "price": "20"
+    }
+  ]
+}
