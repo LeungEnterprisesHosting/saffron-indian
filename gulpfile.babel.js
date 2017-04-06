@@ -161,7 +161,7 @@ gulp.task('useref', () => {
       .pipe(gulpif('*.js', jsTasks()))
       .pipe(gulpif('*.css', rev()))
       .pipe(gulpif('*.js', rev()))
-      .pipe(gulpif('./build/**/*.html'), revReplace())
+      .pipe(gulpif('./build/**/*.html', revReplace()))
     .pipe(gulp.dest('./dist'));
 });
 
