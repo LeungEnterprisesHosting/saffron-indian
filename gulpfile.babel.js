@@ -11,6 +11,8 @@ import imagemin from 'gulp-imagemin';
 import useref from 'gulp-useref';
 import gulpif from 'gulp-if';
 import lazypipe from 'lazypipe';
+import rev from 'gulp-rev';
+import revReplace from 'gulp-rev-replace';
 
 import autoprefixer from 'gulp-autoprefixer';
 import cssnano from 'gulp-cssnano';
@@ -157,6 +159,9 @@ gulp.task('useref', () => {
     .pipe(useref())
       .pipe(gulpif('*.css', cssTasks()))
       .pipe(gulpif('*.js', jsTasks()))
+      .pipe(gulpif('*.css', rev()))
+      .pipe(gulpif('*.js', rev()))
+      .pipe(revReplace())
     .pipe(gulp.dest('./dist'));
 });
 
