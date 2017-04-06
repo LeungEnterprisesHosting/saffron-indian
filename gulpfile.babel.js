@@ -6,8 +6,6 @@ import stylus from 'gulp-stylus';
 import babel from 'gulp-babel';
 import flatten from 'gulp-flatten';
 
-import imagemin from 'gulp-imagemin';
-
 import useref from 'gulp-useref';
 import gulpif from 'gulp-if';
 import lazypipe from 'lazypipe';
@@ -53,7 +51,8 @@ gulp.task('babel', () => {
 
 gulp.task('copy-img', () => {
   return gulp.src('./src/img/**/*')
-    .pipe(gulp.dest('./build/img'));
+    .pipe(gulp.dest('./build/img'))
+    .pipe(gulp.dest('./dist/img'));
 });
 
 gulp.task('copy-icons', () => {
@@ -126,14 +125,6 @@ gulp.task('dev', ['build'], () => {
  * Minification, optimization, etc.
  */
 
-gulp.task('imagemin', () => {
-  return gulp.src('./build/img/**/*')
-    .pipe(imagemin({
-        progressive: true
-    }))
-    .pipe(gulp.dest('./dist/img'));
-});
-
 gulp.task('copy-fonts', () => {
   return gulp.src('./build/fonts/**/*')
     .pipe(gulp.dest('./dist/fonts'));
@@ -161,9 +152,9 @@ gulp.task('useref', () => {
       .pipe(gulpif('*.js', jsTasks()))
       .pipe(gulpif('*.css', rev()))
       .pipe(gulpif('*.js', rev()))
-      .pipe(gulpif('./build/**/*.html', revReplace()))
-    .pipe(gulp.dest('./dist'));
+      .pipe(revReplace())
+      .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('produce', ['imagemin', 'copy-fonts', 'copy-custom-vendor', 'useref'], () => {
+gulp.task('produce', ['copy-fonts', 'copy-custom-vendor', 'useref'], () => {
 });
