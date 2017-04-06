@@ -16,6 +16,8 @@ import autoprefixer from 'gulp-autoprefixer';
 import cssnano from 'gulp-cssnano';
 import uglify from 'gulp-uglify';
 
+import yaml from 'gulp-yaml';
+
 /**
  * Build Tasks:
  * Initial compilation and copying only
@@ -73,10 +75,17 @@ gulp.task('copy-vendor', () => {
 
 // Custom copy function for both build and produce
 gulp.task('copy-specials', () => {
-  return gulp.src('./src/specials-data/**/*')
+  return gulp.src('./src/specials-data/**/*.json')
     .pipe(gulp.dest('./build/specials-data'))
     .pipe(gulp.dest('./dist/specials-data'));
 });
+
+gulp.task('copy-specials-yaml', () => {
+  return gulp.src('./src/specials-data/**/*.yml')
+    .pipe(yaml({ space: 2 }))
+    .pipe(gulp.dest('./build/specials-data'))
+    .pipe(gulp.dest('./dist/specials-data'));
+})
 
 // Custom copy function for uploads folder
 gulp.task('copy-uploads', () => {
@@ -92,7 +101,7 @@ gulp.task('copy-sitemap', () => {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('copy-stuff', ['copy-icons', 'copy-specials', 'copy-uploads', 'copy-sitemap']);
+gulp.task('copy-stuff', ['copy-icons', 'copy-specials', 'copy-specials-yaml', 'copy-uploads', 'copy-sitemap']);
 
 gulp.task('build', ['jade', 'stylus', 'babel', 'copy-img', 'flatten-fonts', 'copy-vendor', 'copy-stuff'], () => {
 });

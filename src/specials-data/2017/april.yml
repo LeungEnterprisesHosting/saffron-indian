@@ -1,0 +1,27 @@
+appetizers:
+-
+  name: Dabeli
+  description: A very famous street food from western India, with mashed and spiced potatoes, served over pao (bread bun), topped with chutneys and pomegranate seeds.
+  price: 7
+-
+  name: Shrimp Manchurian
+  description: Shrimps tossed in a tangy, mildly spices sauce, with a touch of soya sauce and topped with scallions.
+  price: 10
+
+entrees:
+-
+  name: Lauki Palak Dal
+  description: Yellow lentils, fresh spinach, bottle gourd (green squash), light spices.
+  price: 15
+-
+  name: Kabuli Chicken Chole
+  description: Chicken cubes, cooked chickpeas in a tomato curry sauce.
+  price: 17
+-
+  name: Lamb Banjara
+  description: Lamb cubes cooked with mashed smoked eggplant and spices.
+  price: 19
+-
+  name: Shrimp Vegetable Korma
+  description: Shrimps and vegetables cooked in a creamy cashew sauce.
+  price: 20
