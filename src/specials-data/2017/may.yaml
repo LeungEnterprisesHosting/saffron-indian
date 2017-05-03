@@ -1,0 +1,27 @@
+appetizers:
+-
+  name: Chatpata Chicken Samosa
+  description: Lightly spiced chicken and potatoes filled in a dough and golden fried.
+  price: 6
+-
+  name: Spinach Tikki
+  description: Fresh spinach, potatoes, spices, and mint, shallow fried.
+  price: 6
+
+entrees:
+-
+  name: Dal Jalfrajee
+  description: A medley of yellow, black lentils mixed with chickpeas and vegetables.
+  price: 14
+-
+  name: Achari Chicken Tikka
+  description: Chicken tenders marinated in a zesty achari (pickle marinade), and yogurt, grilled in tandoor.
+  price: 17
+-
+  name: Bhindi Gosht
+  description: Lamb cubes cooked in a light sauce with okra.
+  price: 19
+-
+  name: Salmon Saagwala
+  description: Marinated salmon cubes grilled and cooked with spinach and spices.
+  price: 21
