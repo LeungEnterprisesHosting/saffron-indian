@@ -1,0 +1,97 @@
+extends /_layout
+
+block config
+  - page = 'wayne'
+  - title = "Wayne | Saffron Indian Kitchen"
+  - description = "Saffron in Wayne, PA offers a unique, modern experience in traditional Indian cuisine."
+
+block head
+  meta(name="keywords" content="indian, kitchen, saffron, wayne, indian restaurant, bala, cynwyd, indian kitchen, indian food")
+  meta(property="fb:page_id" content="161553280541265")
+  meta(property="og:title" content="Wayne's Best Indian Cuisine - Saffron")
+  meta(property="og:description" content="Saffron Indian Kitchen, located in Wayne, PA, offers a unique ambience which is reinforced by the friendly staff who aim to make your dining experience one to remember.")
+  meta(property="og:url" content="http://www.saffronofphilly.com/wayne")
+  meta(property="og:site_name" content="SaffronOfPhilly.com")
+  meta(property="og:type" content="website")
+  script(type="application/ld+json").
+    {
+      "@context": "http://schema.org",
+      "@type": "Restaurant",
+      "url": "http://www.saffronofphilly.com",
+      "menu": "http://www.saffronofphilly.com/dinner",
+      "servesCuisine": "indian",
+      "acceptsReservations": "Yes",
+      "email": "mailto:saffronbala@gmail.com",
+      "photo": "https://i.imgur.com/wZ7jL14.jpg",
+      "logo": "https://pbs.twimg.com/profile_images/612714669200023552/vkpmXhou.png",
+      "telephone": "+1-610-254-9100",
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+1-610-254-9100",
+        "contactType": "customer service"
+      }],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Wayne",
+        "addressRegion": "PA",
+        "postalCode": "19087",
+        "streetAddress": "522 W. Lancaster Ave."
+      }
+    }
+  //- Page-specific styles
+  style.
+    body {
+      position: relative;
+      overflow-x: hidden;
+      /* Fallback background */
+      background: url('/img/food/tikka-yellow-bg.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    #landing-jumbotron {
+      background: rgba(255,255,255,0.1);
+    }
+    #leungenterprises {
+      position: fixed;
+      right: 15px;
+      bottom: 15px;
+    }
+    #leungenterprises a {
+      color: #222;
+    }
+  style.
+    /* center jumbotron and restrict width */
+    #landing-jumbotron {
+      width: 90%;
+      margin: 0 auto;
+    }
+    @media (min-width: 768px) {
+      #landing-jumbotron {
+        width: 50%;
+      }
+    }
+
+block content
+  .jumbotron#landing-jumbotron
+    .container-fluid
+      #landing
+        #logo
+          h1 Saffron
+          h2.text-lowercase Indian Kitchen
+        br
+        p.
+          Saffron Wayne offers a unique, modern experience in traditional Indian cuisine in Wayne, PA, which is reinforced by the friendly staff who aim to make your dining experience one to remember.
+        br
+        p.
+          522 W. Lancaster Ave.<br>
+          Wayne, PA 19087<br>
+          610 - 254 - 9100
+        br
+        p.
+          #[span(style='font-variant: small-caps;') restaurant hours:]
+          <br>
+          Mon - Fri: 11:30 AM - 9:30 PM<br>
+          Sat - Sun: 12:00 PM - 9:30 PM
+  #leungenterprises.hidden-xs.
+    #[a(href="https://www.leungenterprises.com" target="_blank") Web Design] by
+    #[a(href="https://www.leungenterprises.com" target="_blank") Leung Enterprises]
