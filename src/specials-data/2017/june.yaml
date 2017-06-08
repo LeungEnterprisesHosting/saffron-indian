@@ -1,0 +1,27 @@
+appetizers:
+-
+  name: Lemon Coriander Shrimp
+  description: Shrimps tossed with fresh coriander, lemon juice and light spices.
+  price: 10
+-
+  name: Bhel Poori
+  description: Rice puffs mixed with onions, tomatoes, and tamarind and mint chutneys.
+  price: 6
+
+entrees:
+-
+  name: Hara Bhara Kofta
+  description: Fresh spinach, potatoes, mint and lightly spiced croquets, served in a cashew cream sauce.
+  price: 15
+-
+  name: Methi Mango Chicken
+  description: Chicken curry pieces cooked with fenugreek and a touch of mango pulp, in a light tangy curry.
+  price: 17
+-
+  name: Lamb Dhansak
+  description: Lamb cubes cooked with yellow lentils with light spices.
+  price: 19
+-
+  name: Tandoori Shrimp
+  description: Shrimps marinated with yogurt and spices cooked in the tandoor oven.
+  price: 20
