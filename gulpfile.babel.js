@@ -82,7 +82,7 @@ gulp.task('copy-specials', () => {
 });
 
 gulp.task('copy-specials-yaml', () => {
-  return gulp.src('./src/specials-data/**/*.yml')
+  return gulp.src('./src/specials-data/**/*.+(yml|yaml)')
     .pipe(yaml({ space: 2 }))
     .pipe(gulp.dest('./build/specials-data'))
     .pipe(gulp.dest('./dist/specials-data'));
