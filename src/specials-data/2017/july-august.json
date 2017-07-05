@@ -1,0 +1,31 @@
+{
+  "appetizers": [
+    {
+      "name": "Spinach Chaat",
+      "description": "Fresh Spinach leaves dipped in chic-pea batter golden fried topped with potatoes, chic-peas, yogurt, mint, and tamarind chutney.",
+      "price": "6"
+    }
+  ],
+  "entrees": [
+    {
+     "name": "Tandoori Vegetables",
+     "description": "Lightly spiced grilled vegetables and cubes of paneer, served with veg pulao rice, salad, and raita.",
+     "price": "15"
+    },
+    {
+      "name": "Chicken Chapli Kabob",
+      "description": "Grilled minced chicken patties, marinated with ginger, garlic and spices, served with veg pulao rice, salad and raita.",
+      "price": "17"
+    },
+    {
+      "name": "Lamb Bihari Kabob",
+      "description": "Tender lamb cubes, lightly marinated grilled in the tandoor, served with veg pula rice, salad, and raita.",
+      "price": "19"
+    },
+    {
+      "name": "Tandoori Salmon Tikka",
+      "description": "Fresh Salmon fillets marinated with a touch of yogurt and light spices, cooked in the tandoor to perfection, served with veg pulao rice, salad and raita.",
+      "price": "22"
+    }
+  ]
+}
