@@ -27,7 +27,7 @@ block head
     }
   //- Caviar styles
   style.
-    #caviar-container {
+    .caviar-container {
       margin: 0 auto;
       text-align: center;
       height: 70px;
@@ -125,10 +125,10 @@ block content
           145 Montgomery Ave.<br>
           Bala Cynwyd, PA 19004<br>
           484 - 278 - 4112
-        div#caviar-container.
+        div.caviar-container.
           <div class="caviar-merchant-widget-disc-1">
             <div class="caviar-merchant-widget-content" style="text-align: center;">
-              <a class="caviar-merchant-widget-link-disc-1" href=
+              <a target="_blank" class="caviar-merchant-widget-link-disc-1" href=
               "https://www.trycaviar.com/t/main-line/saffron-indian-kitchen-4427?groups=f_online__d_dwidget-3-disc-1__p_marketing__c_merchant-links&utm_medium=localmarketing&utm_source=widget&utm_campaign=saffron-indian-kitchen-4427&utm_term=main-line&utm_content=saffron-indian-kitchen-4427&cvosrc=localmarketing.widget.saffron-indian-kitchen-4427&cvo_campaign=saffron-indian-kitchen-4427">
               <span>Saffron Indian Kitchen, delivered by Caviar</span></a>
             </div>
@@ -141,7 +141,10 @@ block content
           Ambler, PA 19002<br>
           215 - 540 - 0237
         div#ubereats
-          a(href='https://www.ubereats.com/stores/8acb20c2-4f77-4267-b768-3b5937b1fbc4/')
+          a(
+            target='_blank'
+            href='https://www.ubereats.com/stores/8acb20c2-4f77-4267-b768-3b5937b1fbc4/'
+          )
             img(src='https://i.imgur.com/KClq2hY.png')
         br
         a.location-link(href='/wayne')
@@ -150,10 +153,14 @@ block content
           522 W. Lancaster Ave.<br>
           Wayne, PA 19087<br>
           610 - 254 - 9100
-        div#ubereats
-          br
-          span(style="text-transform: uppercase;").
-            Wayne Delivery available soon
+        div.caviar-container.
+          <div class="caviar-merchant-widget-disc-1">
+            <div class="caviar-merchant-widget-content" style="text-align: center;">
+              <a target="_blank" class="caviar-merchant-widget-link-disc-1" href=
+              "https://www.trycaviar.com/t/main-line/saffron-indian-kitchen--wayne-6300?groups=f_online__d_dwidget-4-disc-1__p_marketing__c_merchant-links&how=delivery&utm_medium=localmarketing&utm_source=widget&utm_campaign=saffron-indian-kitchen--wayne-6300&utm_term=main-line&utm_content=saffron-indian-kitchen--wayne-6300&cvosrc=localmarketing.widget.saffron-indian-kitchen--wayne-6300&cvo_campaign=saffron-indian-kitchen--wayne-6300&cav_source=saffron-indian-kitchen--wayne-6300&cav_medium=widget">
+              <span>Saffron Indian Kitchen - Wayne, delivered by Caviar</span></a>
+            </div>
+          </div>
         br
         p.
           #[span(style='font-variant: small-caps;') restaurant hours:]
