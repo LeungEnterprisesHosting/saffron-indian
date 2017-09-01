@@ -1,0 +1,27 @@
+appetizers:
+-
+  name: Paneer Kathi Roll
+  description: Lightly spiced paneer (homemade cheese), sautéed with onions and tomatoes, wrapped in oven-grilled bread.
+  price: 8
+-
+  name: Sesame Chicken Kabobs
+  description: Chicken tenders marinated in a tangy sweet and sour marinade, topped with oven-roasted sesame seeds.
+  price: 9
+
+entrees:
+-
+  name: Mixed Vegetable Vindaloo
+  description: A blend of mixed vegetables cooked in a spicy curry sauce with a touch of vinegar.
+  price: 14
+-
+  name: Kashmiri Chicken Curry
+  description: Chicken breast pieces cooked in a special cardamom infused curry, with onions, tomatoes, and light spices.
+  price: 16
+-
+  name: Lamb Banjara
+  description: Lamb cubes cooked with mashed eggplant, onions, and tomatoes.
+  price: 19
+-
+  name: Malvani Fish Curry
+  description: Fresh salmon pieces cooked in a curry sauce made from coconut, tamarind, onion and tomatoes.
+  price: 21
