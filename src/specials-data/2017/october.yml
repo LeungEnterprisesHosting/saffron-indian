@@ -1,0 +1,31 @@
+appetizers:
+-
+  name: Pumpkin Soup
+  description: Lightly spiced, special fall soup.
+  price: 5
+-
+  name: Aloo Tikki Chaat
+  description: Spiced potato patties topped with chickpeas and yogurt, finished with tamarind and mint chutney.
+  price: 8
+-
+  name: Lamb Keema Samosa
+  description: Turnovers stuffed with spiced minced lamb.
+  price: 8
+  
+entrees:
+-
+  name: Hariyali Kofta
+  description: Mixed vegetable croquets cooked in a spinach sauce, with a touch of ginger, garlic, and onions.
+  price: 15
+-
+  name: Kabuli Chicken Chole
+  description: Boneless cubes of curry chicken cooked with chickpeas in a curry sauce.
+  price: 16
+-
+  name: Honey Garlic Lamb
+  description: Lamb cubes cooked in a thick sauce with garlic and a touch of honey.
+  price: 19
+-
+  name: Coconut Fish Curry
+  description: Tilapia fillets cooked with mustard seeds, curry leaves and coconut milk.
+  price: 20
