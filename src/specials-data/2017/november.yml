@@ -1,0 +1,31 @@
+appetizers:
+-
+  name: Palak Shorba (Spinach Soup)
+  description: Baby spinach, touch of ginger, and garlic, pureed with spices.
+  price: 5
+-
+  name: Tandoori Chicken Wings
+  description: Medium spiced chicken wings cooked in the tandoor oven.
+  price: 9
+-
+  name: Aloo Boonda
+  description: Lightly spiced potato balls with mustard seeds and curry leaves, dipped in chickpea batter and golden fried.
+  price: 6
+  
+entrees:
+-
+  name: Paneer Khurchan
+  description: Shredded paneer cooked with onions, green peppers, tomatoes and light spices.
+  price: 15
+-
+  name: Malai Chicken Curry
+  description: Chicken cubes cooked in a light curry sauce with a touch of cream cheese.
+  price: 17
+-
+  name: Bhindi Gosht
+  description: Lamb cubes cooked with okra in a thick curry sauce.
+  price: 19
+-
+  name: Shrimp Vindaloo
+  description: A spicy curry cooked with a touch of vinegar and potatoes.
+  price: 20
