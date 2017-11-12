@@ -2,9 +2,12 @@
 
 [Saffron Indian Kitchen](http://www.saffronofphilly.com)
 
-## Run this project
+## Develop
 1. `git clone`
 2. `npm run bower:install`
 3. `npm run gulp:dev`
 4. `cd build && python -m http.server`
 5. http://localhost:8000/
+
+## Deploy
+1. `gulp produce`

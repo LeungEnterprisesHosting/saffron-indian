@@ -1,4 +1,4 @@
-extends /_layout
+extends /_layout.jade
 
 block config
   - page = 'home'
@@ -25,92 +25,11 @@ block head
       "photo": "https://i.imgur.com/wZ7jL14.jpg",
       "logo": "https://pbs.twimg.com/profile_images/612714669200023552/vkpmXhou.png"
     }
-  //- Caviar styles
-  style.
-    .caviar-container {
-      margin: 0 auto;
-      text-align: center;
-      height: 70px;
-      /* 70px - 10px = 60px */
-      padding-bottom: 10px;
-    }
-    .caviar-merchant-widget-disc-1 {
-      /* this is all to make it 60px and acct for scaling */
-      margin-top: -30px;
-      transform: scale(0.5);
-    }
-    .caviar-merchant-widget-disc-1, .caviar-merchant-widget-disc-1 a {
-      display: inline-block;
-      width: 120px;
-      min-height: 120px;
-      padding: 0;
-    }
-    .caviar-merchant-widget-disc-1 a span {
-    visibility: hidden;
-    }
-    .caviar-merchant-widget-link-disc-1 {
-    display: block;
-    background-image: url('https://img.trycaviar.com/raw/widget/v3/caviar-badges-sprite-v3.png');
-    background-position: -1200px -0px;
-    }
-    .caviar-merchant-widget-link-disc-1:hover {
-    background-position: -1320px -0px;
-    }
-    .caviar-merchant-widget-link-disc-1:active {
-    background-position: -1440px -0px;
-    }
-    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
-    .caviar-merchant-widget-link-disc-1 {
-      display: block;
-      background-image: url('https://img.trycaviar.com/raw/widget/v3/caviar-badges-sprite-v3@2x.png');
-      background-size: 1560px 390px;
-    }
-    }
-  //- Page-specific styles
-  style.
-    /* For the BG image slider */
-    html {
-      overflow-x: hidden;
-    }
-    body {
-      position: relative;
-      overflow-x: hidden;
-      /* Fallback background */
-      background: url('./img/food/naan.jpg');
-      background-size: cover;
-    }
-    .bg-slider-img {
-      position: fixed;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      min-height: 100vh;
-      width: 100%;
-      background-size: cover;
-      background-position: center right;
-      /*
-      -webkit-filter: blur(5px);
-      -moz-filter: blur(5px);
-      -o-filter: blur(5px);
-      -ms-filter: blur(5px);
-      filter: blur(5px);
-      */
-    }
-    /* End BG Image slider */
-    #landing-jumbotron {
-      background: rgba(255,255,255,0.1);
-    }
-    #leungenterprises {
-      position: fixed;
-      right: 15px;
-      bottom: 15px;
-    }
-    #leungenterprises a, a.location-link {
-      color: #222;
-    }
-    .location-link:hover {
-      color: #111;
-    }
+  // build:css /css/home-combined.css
+  //- Page-specific styles (e.g. background slider, Caviar widget)
+  link(rel="stylesheet" href="/css/home.css")
+  // endbuild
+    
 block content
   .jumbotron#landing-jumbotron
     .container-fluid
@@ -121,25 +40,37 @@ block content
         br
         a.location-link(href='/bala-cynwyd')
           span(style="font-variant: small-caps; text-transform: uppercase;") Bala Cynwyd
-        p.
+        p.address.
           145 Montgomery Ave.<br>
           Bala Cynwyd, PA 19004<br>
           484 - 278 - 4112
-        div.caviar-container.
-          <div class="caviar-merchant-widget-disc-1">
-            <div class="caviar-merchant-widget-content" style="text-align: center;">
-              <a target="_blank" class="caviar-merchant-widget-link-disc-1" href=
-              "https://www.trycaviar.com/t/main-line/saffron-indian-kitchen-4427?groups=f_online__d_dwidget-3-disc-1__p_marketing__c_merchant-links&utm_medium=localmarketing&utm_source=widget&utm_campaign=saffron-indian-kitchen-4427&utm_term=main-line&utm_content=saffron-indian-kitchen-4427&cvosrc=localmarketing.widget.saffron-indian-kitchen-4427&cvo_campaign=saffron-indian-kitchen-4427">
-              <span>Saffron Indian Kitchen, delivered by Caviar</span></a>
-            </div>
-          </div>
+        a.doordash-widget(
+          target='_blank'
+          href="https://www.doordash.com/business/91666/?utm_source=partner-link&utm_medium=website&utm_campaign=91666"
+          alt="Order Food Delivery with DoorDash"
+          title="Order Food Delivery with DoorDash"
+        ) Order Food Delivery with DoorDash
+        .caviar-container
+          .caviar-merchant-widget-disc-1
+            .caviar-merchant-widget-content(style="text-align: center;")
+              a.caviar-merchant-widget-link-disc-1(
+                target="_blank"
+                href="https://www.trycaviar.com/t/main-line/saffron-indian-kitchen-4427?groups=f_online__d_dwidget-3-disc-1__p_marketing__c_merchant-links&utm_medium=localmarketing&utm_source=widget&utm_campaign=saffron-indian-kitchen-4427&utm_term=main-line&utm_content=saffron-indian-kitchen-4427&cvosrc=localmarketing.widget.saffron-indian-kitchen-4427&cvo_campaign=saffron-indian-kitchen-4427"
+              )
+                span Saffron Indian Kitchen, delivered by Caviar
         br
         a.location-link(href='/ambler')
           span(style="font-variant: small-caps; text-transform: uppercase;") Ambler
-        p.
+        p.address.
           60 E. Butler Ave.<br>
           Ambler, PA 19002<br>
           215 - 540 - 0237
+        a.doordash-widget(
+          target='_blank'
+          href="https://www.doordash.com/business/91666/?utm_source=partner-link&utm_medium=website&utm_campaign=91666"
+          alt="Order Food Delivery with DoorDash"
+          title="Order Food Delivery with DoorDash"
+        ) Order Food Delivery with DoorDash
         div#ubereats
           a(
             target='_blank'
@@ -149,18 +80,24 @@ block content
         br
         a.location-link(href='/wayne')
           span(style="font-variant: small-caps; text-transform: uppercase;") Wayne
-        p.
+        p.address.
           522 W. Lancaster Ave.<br>
           Wayne, PA 19087<br>
           610 - 254 - 9100
-        div.caviar-container.
-          <div class="caviar-merchant-widget-disc-1">
-            <div class="caviar-merchant-widget-content" style="text-align: center;">
-              <a target="_blank" class="caviar-merchant-widget-link-disc-1" href=
-              "https://www.trycaviar.com/t/main-line/saffron-indian-kitchen--wayne-6300?groups=f_online__d_dwidget-4-disc-1__p_marketing__c_merchant-links&how=delivery&utm_medium=localmarketing&utm_source=widget&utm_campaign=saffron-indian-kitchen--wayne-6300&utm_term=main-line&utm_content=saffron-indian-kitchen--wayne-6300&cvosrc=localmarketing.widget.saffron-indian-kitchen--wayne-6300&cvo_campaign=saffron-indian-kitchen--wayne-6300&cav_source=saffron-indian-kitchen--wayne-6300&cav_medium=widget">
-              <span>Saffron Indian Kitchen - Wayne, delivered by Caviar</span></a>
-            </div>
-          </div>
+        a.doordash-widget(
+          target='_blank'
+          href="https://www.doordash.com/business/91666/?utm_source=partner-link&utm_medium=website&utm_campaign=91666"
+          alt="Order Food Delivery with DoorDash"
+          title="Order Food Delivery with DoorDash"
+        ) Order Food Delivery with DoorDash
+        div.caviar-container
+          .caviar-merchant-widget-disc-1
+            .caviar-merchant-widget-content(style="text-align: center;")
+              a.caviar-merchant-widget-link-disc-1(
+                target="_blank"
+                href="https://www.trycaviar.com/t/main-line/saffron-indian-kitchen--wayne-6300?groups=f_online__d_dwidget-4-disc-1__p_marketing__c_merchant-links&how=delivery&utm_medium=localmarketing&utm_source=widget&utm_campaign=saffron-indian-kitchen--wayne-6300&utm_term=main-line&utm_content=saffron-indian-kitchen--wayne-6300&cvosrc=localmarketing.widget.saffron-indian-kitchen--wayne-6300&cvo_campaign=saffron-indian-kitchen--wayne-6300&cav_source=saffron-indian-kitchen--wayne-6300&cav_medium=widget"
+              )
+                span Saffron Indian Kitchen - Wayne, delivered by Caviar
         br
         p.
           #[span(style='font-variant: small-caps;') restaurant hours:]
@@ -202,12 +139,15 @@ block scripts
       msieversion();
     })();
   script.
-    var mobile = window.innerWidth < 768;
-    if (!mobile) {
-      bgSlider({images:['./img/food/naan.jpg', 'http://i.imgur.com/wZ7jL14.jpg', 'http://i.imgur.com/BJJmvlr.jpg']});
-    } else {
-      /* Mobile fallback */
-      $('#landing-jumbotron').css('background', 'url("./img/food/naan.jpg")');
-      $('#landing-jumbotron').css('background-size', 'cover');
-      $('#landing').css('margin-top', '48px');
-    }
+    // Wrap in IIFE to avoid polluting global scope
+    (function() {
+      var mobile = window.innerWidth < 768;
+      if (!mobile) {
+        bgSlider({images:['./img/food/naan.jpg', 'http://i.imgur.com/wZ7jL14.jpg', 'http://i.imgur.com/BJJmvlr.jpg']});
+      } else {
+        /* Mobile fallback */
+        $('#landing-jumbotron').css('background', 'url("./img/food/naan.jpg")');
+        $('#landing-jumbotron').css('background-size', 'cover');
+        $('#landing').css('margin-top', '48px');
+      }
+    })();
