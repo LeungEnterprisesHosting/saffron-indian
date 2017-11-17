@@ -12,6 +12,9 @@
     "gulp:produce": "gulp produce",
     "bower:install": "bower install"
   },
+  "engines": {
+    "node": ">= 4"
+  },
   "author": "Leung Enterprises <hello@leungenterprises.com>",
   "license": "UNLICENSED",
   "dependencies": {
