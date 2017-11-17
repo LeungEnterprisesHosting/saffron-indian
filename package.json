@@ -13,7 +13,7 @@
     "bower:install": "bower install"
   },
   "engines": {
-    "node": ">= 4"
+    "node": ">= 6"
   },
   "author": "Leung Enterprises <hello@leungenterprises.com>",
   "license": "UNLICENSED",
