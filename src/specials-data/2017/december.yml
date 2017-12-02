@@ -1,0 +1,31 @@
+appetizers:
+-
+  name: Carrot Corn Soup
+  description: Carrots, corn, onions, and spices with a touch of cream.
+  price: 5
+-
+  name: Gobi Bezule
+  description: Crispy fried cauliflower florets, tossed with coconut milk, curry leaves, mustard seeds, and light spices.
+  price: 7
+-
+  name: Lasooni Murg Tikka
+  description: Chicken tenders marinated with garlic, yogurt, and spices.
+  price: 9
+  
+entrees:
+-
+  name: Khatta Meetha Baigan
+  description: Baby eggplant, lightly spiced cooked in a curry sauce with a touch of tamarind.
+  price: 15
+-
+  name: Murg Banjara
+  description: Chicken cubes cooked with mashed eggplant, tomatoes, and onions.
+  price: 17
+-
+  name: Lazeez Gosht
+  description: Lamb Cubes cooked in a special blend of spices with fresh ginger, onion, tomatoes, and yogurt.
+  price: 19
+-
+  name: Hyderabadi Salmon Curry
+  description: Salmon fillets cooked in a blend of spices, with curry leaves, mustard seeds, tamarind puree, in a light curry.
+  price: 21
