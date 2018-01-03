@@ -1,0 +1,31 @@
+appetizers:
+-
+  name: Lentil Soup
+  description: Yellow lentils, spices, and a touch of garlic.
+  price: 5
+-
+  name: Dabeli
+  description: Mashed potatoes mixed with a special blend of spices, put on a toasted bun, topped with chutneys and pomegranate.
+  price: 8
+-
+  name: Almond-Crusted Shrimp
+  description: Almonds, chickpea flour, and light spices — golden fried.
+  price: 10
+  
+entrees:
+-
+  name: Spinach Kofta Curry
+  description: Croquets made from fresh spinach, potatoes, homemade cheese, cooked in a cashew cream curry sauce.
+  price: 15
+-
+  name: Keema Mutter
+  description: Minced chicken and peas cooked with onions, tomatoes, ginger, garlic, and spices.
+  price: 17
+-
+  name: Lamb Dhansak
+  description: Lamb cubes cooked with yellow lentils and spices.
+  price: 19
+-
+  name: Pahari Salmon Kabob
+  description: Fresh salmon cubes marinated with cilantro, ginger, garlic, and spices, grilled in the tandoor oven.
+  price: 22
