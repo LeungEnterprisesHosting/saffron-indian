@@ -1,0 +1,31 @@
+appetizers:
+-
+  name: Tomato Carrot Soup
+  description: Tomatoes, baby carrots light spices.
+  price: 5
+-
+  name: Beet Root Tikki
+  description: Fresh Beets, potatoes spices, shallow fried.
+  price: 6
+-
+  name: Lamb Keema Samosa
+  description: Turnovers stuffed with lightly spiced minced lamb.
+  price: 9
+  
+entrees:
+-
+  name: Daal Saag
+  description: Yellow lentils, black lentil and chick-peas cooked with fresh spinach with a touch of garlic.
+  price: 15
+-
+  name: Achari Chicken Curry
+  description: Boneless pieces of chicken curry flavored with tangy mix pickles and spices.
+  price: 17
+-
+  name: Lamb Kabob Platter
+  description: Tender lamb pieces marinated with yogurt and spiced cooked in the tandoor oven, served over pulao rice with a side of tikka masala sauce.
+  price: 19
+-
+  name: Honey Garlic Shrimp
+  description: Shrimps cooked with honey, garlic, onions and green peppers.
+  price: 21
