@@ -143,10 +143,10 @@ block scripts
     (function() {
       var mobile = window.innerWidth < 768;
       if (!mobile) {
-        bgSlider({images:['./img/food/naan.jpg', 'http://i.imgur.com/wZ7jL14.jpg', 'http://i.imgur.com/BJJmvlr.jpg']});
+        bgSlider({images:['/img/food/naan.jpg', 'https://i.imgur.com/wZ7jL14.jpg', 'https://i.imgur.com/BJJmvlr.jpg']});
       } else {
         /* Mobile fallback */
-        $('#landing-jumbotron').css('background', 'url("./img/food/naan.jpg")');
+        $('#landing-jumbotron').css('background', 'url("/img/food/naan.jpg")');
         $('#landing-jumbotron').css('background-size', 'cover');
         $('#landing').css('margin-top', '48px');
       }
