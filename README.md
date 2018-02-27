@@ -3,11 +3,12 @@
 [Saffron Indian Kitchen](http://www.saffronofphilly.com)
 
 ## Develop
-1. `git clone`
-2. `npm run bower:install`
-3. `npm run gulp:dev`
-4. `cd build && python -m http.server`
-5. http://localhost:8000/
+1. `git clone git@github.com:LeungEnterprisesHosting/saffron-indian`
+2. `yarn install`
+3. `yarn bower:install`
+4. `yarn gulp:dev`
+5. `cd build && python -m http.server`
+6. Visit http://localhost:8000/
 
 ## Deploy
-1. `gulp produce`
+1. `yarn gulp:produce`
