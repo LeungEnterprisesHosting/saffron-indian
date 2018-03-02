@@ -1,0 +1,31 @@
+appetizers:
+-
+  name: Broccoli Potato Soup
+  description: Broccoli, potato, onions, and light spices
+  price: 5
+-
+  name: Vegetable Uttapum
+  description: Rice and lentil pancake topped with carrot, peas, green peppers and tomatoes, served with sambhar and coconut chutney.
+  price: 7
+-
+  name: Konkani Shrimp
+  description: Shrimps tossed with onions, touch of garlic and coconut milk, served with paratha bread.
+  price: 9
+  
+entrees:
+-
+  name: Gobi Musallam
+  description: Cauliflower cooked with onions, tomatoes, touch of yogurt and spices.
+  price: 15
+-
+  name: Murg Methi Malai
+  description: Chicken Curry cubes cooked with fenugreek, spices and touch of cream.
+  price: 17
+-
+  name: Lamb-Do-Piaza
+  description: Lamb cubes cooked with onions, peppers and spices in a thick sauce.
+  price: 19
+-
+  name: Hariyali Salmon Curry
+  description: Salmon cubes cooked in sauce with cilantro, mint, and coconut.
+  price: 22
