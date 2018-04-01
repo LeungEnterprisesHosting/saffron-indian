@@ -1,0 +1,27 @@
+appetizers:
+-
+  name: Ragda Pattis Chaat
+  description: Lightly spiced potato patties topped with curried white peas, tamarind and mint chutney.
+  price: 7
+-
+  name: Shahi Chicken Shami Kabob
+  description: Minced chicken patties lightly spiced cooked on the grill.
+  price: 9
+  
+entrees:
+-
+  name: Kadi Pakora
+  description: Curry made with yogurt, chick-pea flour and spices with mix vegetable fritters.
+  price: 15
+-
+  name: Chicken and Spinach Kofta
+  description: Lightly spiced minced chicken and fresh spinach croquets cooked in a creamy cashew sauce.
+  price: 17
+-
+  name: Gobi Gosht
+  description: Curried lamb cubes cooked with cauliflower.
+  price: 19
+-
+  name: Kerela Fish Curry
+  description: Tilapia fillets cooked with cumin, fennel and spices with a touch of coconut milk.
+  price: 19
