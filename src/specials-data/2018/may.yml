@@ -1,0 +1,27 @@
+appetizers:
+-
+  name: Spring Dosa
+  description: A crepe made with rice and lentil batter stuffed with lightly spiced mix of cabbage, carrots, and green peppers. Served with sambhar and coconut chutney.
+  price: 10
+-
+  name: Murg Palak Kabob
+  description: Chicken tenders marinated with fresh spinach, ginger, garlic yogurt and spices, cooked in tandoor oven.
+  price: 9
+  
+entrees:
+-
+  name: Vegetable Chettinad
+  description: Vegetable blend cooked with cumin, fennel, and ginger. Garlic, coconut milk.
+  price: 15
+-
+  name: Murg Banjara
+  description: Chicken cubes cooked with smoked mashed eggplant and spices.
+  price: 17
+-
+  name: Kashmiri Lamb Curry
+  description: Curried lamb cubes cooked fresh cardamom, touch of milk and spices.
+  price: 19
+-
+  name: Salmon Tikka Saag
+  description: Salmon cubes cooked with fresh spinach and spices.
+  price: 22
