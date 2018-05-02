@@ -10,5 +10,8 @@
 5. `cd build && python -m http.server`
 6. Visit http://localhost:8000/
 
+## Note About Updating Specials
+Make sure the Travis build for the new month's specials commits finishes before updating current.yml because if the current.yml build finishes first, the other commit will overwrite it.
+
 ## Deploy
 1. `yarn gulp:produce`
