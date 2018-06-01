@@ -1,0 +1,27 @@
+appetizers:
+-
+  name: Harra Bhara Kabob
+  description: Patties made with fresh spinach, green peas, potatoes and spices shallow fried.
+  price: 6
+-
+  name: Chicken Seekh Kabob
+  description: Lightly spiced minced kabobs made in the tandoor oven on skewers.
+  price: 9
+  
+entrees:
+-
+  name: Paneer Jalfrazee
+  description: Homemade cheese cubes, tossed with onions and green peppers, ginger, garlic and spices.
+  price: 15
+-
+  name: Kabuli Chicken Chole
+  description: Chicken breast pieces cooked in a traditional curry sauce with chic-peas.
+  price: 17
+-
+  name: Garlic Lamb Kadhai
+  description: Lamb cubes cooked with onions, peppers, spice and a touch of freshly ground garlic.
+  price: 19
+-
+  name: Shrimp Platter
+  description: Shrimps sautéed with a touch of spices, served over veg pilaf, with a side of tikka masala sauce.
+  price: 21
