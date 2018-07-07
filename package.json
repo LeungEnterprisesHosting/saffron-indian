@@ -7,9 +7,13 @@
     "url": "git+https://github.com/LeungEnterprisesHosting/saffron-indian.git"
   },
   "scripts": {
-    "gulp:build": "gulp build",
-    "gulp:dev": "gulp dev",
-    "gulp:produce": "gulp produce",
+    "postinstall": "npm run bower:install",
+    "prebuild": "rimraf build && mkdir build",
+    "build": "gulp build",
+    "predev": "npm run prebuild",
+    "dev": "concurrently \"gulp dev\" \"http-server build\"",
+    "preproduction": "rimraf dist && mkdir dist",
+    "production": "npm run build && gulp produce",
     "bower:install": "bower install"
   },
   "engines": {
@@ -38,5 +42,9 @@
     "gulp-useref": "^3.0.0",
     "gulp-yaml": "^1.0.1",
     "lazypipe": "^1.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.0",
+    "http-server": "^0.11.1"
   }
 }
