@@ -71,12 +71,15 @@ block content
           alt="Order Food Delivery with DoorDash"
           title="Order Food Delivery with DoorDash"
         ) Order Food Delivery with DoorDash
-        div#ubereats
-          a(
-            target='_blank'
-            href='https://www.ubereats.com/stores/8acb20c2-4f77-4267-b768-3b5937b1fbc4/'
-          )
-            img(src='https://i.imgur.com/KClq2hY.png')
+        //- Spacer
+        div(style="display: block; width: 100%; height: 10px;")
+        //- Remove Uber Eats (they don't deliver with them anymore)
+          div#ubereats
+            a(
+              target='_blank'
+              href='https://www.ubereats.com/stores/8acb20c2-4f77-4267-b768-3b5937b1fbc4/'
+            )
+              img(src='https://i.imgur.com/KClq2hY.png')
         br
         a.location-link(href='/wayne')
           span(style="font-variant: small-caps; text-transform: uppercase;") Wayne
