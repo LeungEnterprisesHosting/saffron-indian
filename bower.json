@@ -2,9 +2,7 @@
   "name": "saffron-indian",
   "description": "Saffron Website",
   "main": "",
-  "authors": [
-    "Leung Enterprises"
-  ],
+  "authors": ["Leung Enterprises"],
   "license": "UNLICENSED",
   "homepage": "https://github.com/LeungEnterprisesHosting/saffron-indian.git",
   "moduleType": [],
@@ -18,9 +16,9 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.3.5",
-    "font-awesome": "~4.4.0",
-    "wow": "^1.1.2",
-    "animate.css": "^3.5.1"
+    "bootstrap": "3.3.5",
+    "font-awesome": "4.4.0",
+    "wow": "1.1.2",
+    "animate.css": "3.5.1"
   }
 }
