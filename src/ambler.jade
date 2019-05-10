@@ -17,12 +17,12 @@ block head
     {
       "@context": "http://schema.org",
       "@type": "Restaurant",
-      "url": "http://www.saffronofphilly.com",
-      "menu": "http://www.saffronofphilly.com/dinner",
+      "url": "https://www.saffronofphilly.com",
+      "menu": "https://www.saffronofphilly.com/dinner",
       "servesCuisine": "indian",
       "acceptsReservations": "Yes",
       "email": "mailto:saffronbala@gmail.com",
-      "photo": "https://i.imgur.com/wZ7jL14.jpg",
+      "photo": "https://www.saffronofphilly.com/uploads/tables.jpg",
       "logo": "https://pbs.twimg.com/profile_images/612714669200023552/vkpmXhou.png",
       "telephone": "+1-215-540-0237",
       "contactPoint": [{
@@ -44,7 +44,7 @@ block head
       position: relative;
       overflow-x: hidden;
       /* Fallback background */
-      background: url('https://i.imgur.com/lbRIDKr.jpg');
+      background: url(#{require('./img/food/dessert2.jpg')});
       background-size: cover;
       background-position: center;
     }

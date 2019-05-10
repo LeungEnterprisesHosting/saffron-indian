@@ -1,6 +1,6 @@
 [build]
   publish = "dist"
-  command = "bash ./deploy.sh"
+  command = "npm build"
 
 [build.environment]
   NODE_VERSION = "8"

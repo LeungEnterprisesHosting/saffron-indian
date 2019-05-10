@@ -33,25 +33,4 @@ block content
                 tr
                   td Loading...
                 //- Javascript will put specials here
-
-block scripts
-  script.
-    $(document).ready(function() {
-      $.getJSON("specials-data/current.json", function(data) {
-        $('.month').html(data.month);
-        $.getJSON("specials-data/" + data.year + "/" + data.month.toLowerCase() + ".json", function(data) {
-          function listSpecials(array, tableId) {
-            $('#' + tableId + ' > tbody').html('');
-            array.forEach(function(item) {
-              // Clear the loading text
-              $('#' + tableId + ' > tbody').append(
-                '<tr><td>' + item.name + '</td><td>$' + item.price + '</td></tr>' +
-                '<tr><td colspan="2">' + item.description + '</td></tr>'
-              );
-            });
-          }
-          listSpecials(data.appetizers, "appetizers-table");
-          listSpecials(data.entrees, "entrees-table");
-        });
-      });
-    });
+    
