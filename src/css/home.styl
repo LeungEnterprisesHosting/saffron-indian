@@ -36,15 +36,37 @@ a.location-link
 a.location-link + .address
   margin-bottom 5px
 
+.online-ordering-container
+  display flex
+  flex-direction row
+  align-items center
+  justify-content center
+  padding-top 15px
+
+.catering-button
+  display inline-block
+  font-family Lato
+  font-weight 700
+  margin 5px
+  padding 10px
+  padding-left 15px
+  padding-right 15px
+  font-size 12px
+  background-color #88bb40
+  border-radius 9999px
+  color white
+
+  &:hover, &:active, &:focus
+    opacity 0.75
+    text-decoration none
+    color white
+
 /**
  * Caviar Widget CSS
  */
 .caviar-container
-  margin 0 auto
   text-align center
   height 70px
-  /* 70px - 10px = 60px */
-  padding-bottom 10px
 
 .caviar-merchant-widget-disc-1
   /* this is all to make it 60px and acct for scaling */
@@ -88,7 +110,7 @@ a.location-link + .address
   width 150px
   height 32px
   font-size 1rem
-  margin-bottom 5px
+  margin 5px
   background-image url("https://cdn.doordash.com/media/button/209x45_red.png")
   background-size contain
   background-repeat no-repeat

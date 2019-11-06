@@ -3,12 +3,14 @@
 [Saffron Indian Kitchen](http://www.saffronofphilly.com)
 
 ## Develop
+
 1. `git clone git@github.com:LeungEnterprisesHosting/saffron-indian`
 2. `yarn install`
-4. `yarn run dev`,
-5. Visit http://localhost:8080/
+3. `yarn run dev`,
+4. Visit http://localhost:4000/
 
 ## Updating Specials
+
 To update the specials, create a new file in the `specials-data/` directory under the current year. For example, to create the specials for January 2022, you should create a file called `january.yml` in the `2022` folder (create that folder if it doesn't exist yet).
 
 Next, copy the previous month's file as a template (in this case, we'd copy `december.yml` from the `2021` folder and then paste in into `january.yml` in the `2022` folder). After that, change the dishes and descriptions to reflect the new month's specials.
@@ -25,4 +27,5 @@ month: July-August
 The above configuration will look for specials in a file called `july-august.yml` in the `2018` folder.
 
 ## Deploy
+
 1. `yarn gulp:produce`
