@@ -81,21 +81,29 @@ html(lang='en')
       </noscript>
     
     block head
-  body
-    //- .flash-bar-shown - this is a body class
-    //-
-      .flash-bar
-        .flash-bar-content
-          p.
-            #[i.fa.fa-cutlery]
-            &nbsp;
+  body.flash-bar-shown
+    .flash-bar
+      .flash-bar-content
+        p.
+          #[i.fa.fa-cutlery]
+          &nbsp;
 
-            We are opening a new location soon in Wayne, PA, on 522 West Lancaster Ave!
+          Now Offering Direct Online Ordering for Pick-Up &amp; Delivery
+          &nbsp;
+          #[a.placepull-link(href="https://order.placepull.com/restaurant/saffron-balacynwyd/") Bala Cynwyd]
+          &nbsp;
+          &mdash;
+          &nbsp;
+          #[a.placepull-link(href="https://order.placepull.com/restaurant/saffron-ambler") Ambler]
+          &nbsp;
+          &mdash;
+          &nbsp;
+          #[a.placepull-link(href="https://order.placepull.com/restaurant/saffron-wayne") Wayne]
 
-            &nbsp;
-            #[i.fa.fa-cutlery]
+          &nbsp;
+          #[i.fa.fa-cutlery]
 
-            #[span.pull-right.close-btn &times;]
+          #[span.pull-right.close-btn &times;]
     nav.navbar-fixed-top
       button.btn.nav-toggle
         i.fa.fa-bars.fa-2x

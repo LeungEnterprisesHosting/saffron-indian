@@ -37,13 +37,25 @@ a.location-link + .address
   margin-bottom 5px
 
 .online-ordering-container
+  position relative
   display flex
   flex-direction row
   align-items center
   justify-content center
   padding-top 15px
+  padding-bottom 25px
 
-.catering-button
+  &::after
+    content ''
+    padding-top 10px
+    display block
+    position absolute
+    bottom 0
+    width 25px
+    margin 0 auto
+    border-top 1px solid #888
+
+button(bg)
   display inline-block
   font-family Lato
   font-weight 700
@@ -52,7 +64,7 @@ a.location-link + .address
   padding-left 15px
   padding-right 15px
   font-size 12px
-  background-color #88bb40
+  background bg
   border-radius 9999px
   color white
 
@@ -60,6 +72,12 @@ a.location-link + .address
     opacity 0.75
     text-decoration none
     color white
+
+.catering-button
+  button(#88bb40)
+
+.placepull-button
+  button(#B20811)
 
 /**
  * Caviar Widget CSS
